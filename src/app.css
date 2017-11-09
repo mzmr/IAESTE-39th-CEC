@@ -1,0 +1,171 @@
+/* @font-face {
+  font-family: robotoThin;
+  src: url('./src/resources/fonts/roboto-thin.ttf');
+} */
+
+@font-face {
+  font-family: robotoLight;
+  src: url('./src/resources/fonts/roboto-light.ttf');
+}
+
+@font-face {
+  font-family: robotoBold;
+  src: url('./src/resources/fonts/roboto-bold.ttf');
+}
+
+html, body {
+  height:100%;
+  font-family: robotoLight;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-header .navbar-brand {
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  font-size: 26px;
+  font-family: robotoBold;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+  background:transparent;
+}
+
+.navbar-default .navbar-header .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar, .navbar-default {
+  background:transparent;
+  border:none;
+  z-index:9999 !important;
+  position:absolute;
+  width:100%;
+}
+
+@media (min-width:768px) {
+  .navbar, .navbar-default {
+    padding: 15px;
+  }
+
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color:white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    font-family: robotoBold;
+    border-color: white;
+  }
+
+  .navbar-default .navbar-nav > .active > a:focus {
+    background: initial;
+    color: white;
+  }
+
+  .overlay, .slogan-container {
+    height: 350px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar, .navbar-default, .navbar-collapse {
+    padding:0;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    background-color: #156193;
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    background-color: #1976b6;
+    color:white;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color:#156193;
+    background-color: white;
+    font-family: robotoBold;
+  }
+
+  .nav {
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+
+  .overlay, .slogan-container {
+    height: 300px;
+  }
+}
+
+@media (min-width:768px) {
+  .jumbotron .slogan {
+    margin-top: 80px;
+    position:relative;
+    z-index:10;
+    font-size: 80px;
+  }
+}
+
+@media (max-width:767px) {
+  .jumbotron .slogan {
+    margin-top: 80px;
+    position:relative;
+    z-index:10;
+    font-size: 60px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  background: url('./src/resources/images/slogan-pattern.png');
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slogan-container {
+  color: white;
+  padding-bottom:0;
+  /* background: #176da6; */
+  background: #0f4469;
+  background: -moz-linear-gradient(top, #0f4469 0%, #176da6 60%);
+  background: -webkit-linear-gradient(top, #0f4469 0%,#176da6 60%);
+  background: linear-gradient(to bottom, #0f4469 0%,#176da6 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4469', endColorstr='#176da6',GradientType=0 );
+}
+
+.page-content {
+  background: url('./src/resources/images/gradient-left-bottom.png') no-repeat;
+  background-size: 100% 60px;
+  background-repeat: no-repeat;
+  margin-top: -90px;
+  z-index: 3;
+  position:relative;
+  padding-top: 120px;
+  width: 100%;
+}

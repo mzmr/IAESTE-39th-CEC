@@ -1,0 +1,21 @@
+<template>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainTopNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">39th CEC</a>
+      </div>
+      <div id="mainTopNavbar" class="collapse navbar-collapse">
+        <ul class="nav pull-right navbar-nav">
+          <li repeat.for="route of router.navigation" class="${route.isActive ? 'active' : ''}">
+            <a href.bind="route.href" data-toggle="collapse" data-target=".navbar-collapse.in">${route.title}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</template>

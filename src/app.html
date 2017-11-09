@@ -1,3 +1,8 @@
 <template>
-  <h1>${message}</h1>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="resources/elements/menu"></require>
+  <require from="./app.css"></require>
+
+  <menu router.bind="router" containerless></menu>
+  <router-view></router-view>
 </template>
