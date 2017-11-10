@@ -35,7 +35,7 @@ html, body {
 
 .navbar-default .navbar-header .navbar-brand {
   font-size: 26px;
-  font-family: robotoBold;
+  font-family: robotoLight;
 }
 
 .navbar-default .navbar-header .navbar-toggle {
@@ -52,6 +52,11 @@ html, body {
   z-index:9999 !important;
   position:absolute;
   width:100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width:768px) {
@@ -83,6 +88,15 @@ html, body {
   .overlay, .slogan-container {
     height: 350px;
   }
+
+  .navbar-brand > .navbar-logo {
+    width: 90px;
+    margin-right:25px;
+  }
+  
+  .navbar-brand {
+    padding-top: 60px;
+  }
 }
 
 @media (max-width:767px) {
@@ -91,20 +105,20 @@ html, body {
   }
 
   .navbar-default .navbar-nav > li > a {
-    background-color: #156193;
+    background-color: #0e4468;
     padding-top:15px;
     padding-bottom:15px;
   }
 
   .navbar-default .navbar-nav > li > a:hover {
-    background-color: #1976b6;
+    background-color: #156193;
     color:white;
   }
 
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-    color:#156193;
+    color:#0e4468;
     background-color: white;
     font-family: robotoBold;
   }
@@ -117,6 +131,17 @@ html, body {
 
   .overlay, .slogan-container {
     height: 300px;
+  }
+
+  .navbar-brand > .navbar-logo {
+    max-height: 100%;
+    margin-right:10px;
+  }
+  
+  .navbar-brand {
+    max-height:100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
@@ -151,12 +176,11 @@ html, body {
 .slogan-container {
   color: white;
   padding-bottom:0;
-  /* background: #176da6; */
-  background: #0f4469;
-  background: -moz-linear-gradient(top, #0f4469 0%, #176da6 60%);
-  background: -webkit-linear-gradient(top, #0f4469 0%,#176da6 60%);
-  background: linear-gradient(to bottom, #0f4469 0%,#176da6 60%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4469', endColorstr='#176da6',GradientType=0 );
+  background: #0b3450;
+  background: -moz-linear-gradient(top, #0b3450 10%, #176da6 90%);
+  background: -webkit-linear-gradient(top, #0b3450 10%,#176da6 90%);
+  background: linear-gradient(to bottom, #0b3450 10%,#176da6 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3450', endColorstr='#176da6',GradientType=0 );
 }
 
 .page-content {
