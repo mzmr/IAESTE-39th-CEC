@@ -1,0 +1,23 @@
+<template>
+  <require from="../../resources/elements/border-right-top"></require>
+
+  <border-right-top></border-right-top>
+  <section class="page-bottom">
+    <div class="footer-container">
+      <div class="container">
+        <h1 class="footer-header">Sponsors</h1>
+        <div class="sponsor-container">
+          <div class="row justify-content-around">
+            <div repeat.for="sponsor of sponsors" class="sponsor-elem col-sm-6 col-md-4"
+                if.bind="isReady">
+              <a href.bind="sponsor.website" class="sponsor-data">
+                <img class="logo" src.bind="sponsor.logo">
+                <h4 class="sponsor-name text-center">${sponsor.name}</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

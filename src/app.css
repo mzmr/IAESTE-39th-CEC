@@ -14,7 +14,10 @@
 }
 
 html, body {
-  height:100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-family: robotoLight;
 }
 
@@ -29,7 +32,7 @@ html, body {
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-header .navbar-brand {
-  color: white;
+  color: #ed2123;
   font-size: 18px;
 }
 
@@ -40,6 +43,7 @@ html, body {
 
 .navbar-default .navbar-header .navbar-toggle {
   background:transparent;
+  border:transparent;
 }
 
 .navbar-default .navbar-header .navbar-toggle .icon-bar {
@@ -47,7 +51,7 @@ html, body {
 }
 
 .navbar, .navbar-default {
-  background:transparent;
+  background:white;
   border:none;
   z-index:9999 !important;
   position:absolute;
@@ -69,33 +73,33 @@ html, body {
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover {
     background-color: transparent;
-    color:white;
+    color: #ed2123;
     border: 1px solid transparent;
-    border-radius: 5px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > .active > a:hover {
+    border-color: #ed2123;
+    color: #ed2123;
   }
   
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover {
     font-family: robotoBold;
-    border-color: white;
   }
 
   .navbar-default .navbar-nav > .active > a:focus {
-    background: initial;
-    color: white;
+    background: transparent;
+    color: #ed2123;
   }
 
-  .overlay, .slogan-container {
-    height: 350px;
+  .slogan-container {
+    height: 320px;
   }
 
   .navbar-brand > .navbar-logo {
     width: 90px;
     margin-right:25px;
-  }
-  
-  .navbar-brand {
-    padding-top: 60px;
   }
 }
 
@@ -110,7 +114,8 @@ html, body {
     padding-bottom:15px;
   }
 
-  .navbar-default .navbar-nav > li > a:hover {
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
     background-color: #156193;
     color:white;
   }
@@ -129,7 +134,7 @@ html, body {
     padding:0;
   }
 
-  .overlay, .slogan-container {
+  .slogan-container {
     height: 300px;
   }
 
@@ -145,51 +150,115 @@ html, body {
   }
 }
 
-@media (min-width:768px) {
-  .jumbotron .slogan {
-    margin-top: 80px;
-    position:relative;
-    z-index:10;
-    font-size: 80px;
-  }
+
+.inner-slogan-container {
+  position: relative;
+  height: 100%;
+}
+
+.inner-slogan-container .slogan {
+  bottom:0;
+  right:0;
+  position:absolute;
+  z-index:10;
+  color: white;
+  font-size: 80px;
+  margin: 0;
 }
 
 @media (max-width:767px) {
   .jumbotron .slogan {
-    margin-top: 80px;
-    position:relative;
-    z-index:10;
-    font-size: 60px;
+    transform: translate(-50%,-150%);
+    font-size: 40px;
+  }
+
+  .jumbotron .slogan::after {
+    height: 2px;
   }
 }
 
-.overlay {
-  position: absolute;
-  z-index: 2;
-  background: url('./src/resources/images/slogan-pattern.png');
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
 .slogan-container {
-  color: white;
   padding-bottom:0;
-  background: #0b3450;
-  background: -moz-linear-gradient(top, #0b3450 10%, #176da6 90%);
-  background: -webkit-linear-gradient(top, #0b3450 10%,#176da6 90%);
-  background: linear-gradient(to bottom, #0b3450 10%,#176da6 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3450', endColorstr='#176da6',GradientType=0 );
+  margin-bottom:0;
+  background-color: #ed2123;
+  background-image: url('images/slogan-pattern.png');
+  width: 100%;
 }
 
 .page-content {
-  background: url('./src/resources/images/gradient-left-bottom.png') no-repeat;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.border-right-top {
+  background: url('images/border-right-top.png') no-repeat;
+  margin-bottom:-60px;
+}
+
+/* .building-shape {
+  background: url('images/wawel.png') no-repeat;
+  margin-top: -200px;
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  z-index: 3;
+  position: relative;
+  height:200px;
+  width:100%;
+} */
+
+.border-left-bottom, .border-right-top {
   background-size: 100% 60px;
   background-repeat: no-repeat;
-  margin-top: -90px;
   z-index: 3;
-  position:relative;
-  padding-top: 120px;
-  width: 100%;
+  position: relative;
+  height:60px;
+  width:100%;
+}
+
+.page-bottom .sponsor-elem .logo {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container {
+  color: white;
+  padding-bottom:0;
+  margin-bottom:0;
+  background-color: #505050;
+  background-image: url('images/slogan-pattern.png');
+  width:100%;
+}
+
+.footer-container .footer-header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  background: white;
+  left: 0;
+  right: 0;
+}
+
+.footer-container {
+  padding-top: 80px;
+}
+
+.footer-container .sponsor-data,
+.footer-container .sponsor-name,
+.footer-container .sponsor-name:link,
+.footer-container .sponsor-name:visited,
+.footer-container .sponsor-name:hover,
+.footer-container .sponsor-name:active {
+  color:white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.footer-container .sponsor-elem {
+  margin-top: 80px;
+}
+
+.footer-container .sponsor-name {
+  margin-top: 20px;
 }

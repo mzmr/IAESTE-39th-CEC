@@ -1,6 +1,7 @@
 export class App {
   configureRouter(config, router) {
     config.title = 'CEC';
+    config.options.root = '/';
     config.map([
       {
         route: ['', 'home'], name: 'home',
