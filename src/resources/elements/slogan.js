@@ -1,5 +1,6 @@
 import {bindable} from 'aurelia-framework';
 
 export class Slogan {
-  @bindable router = null;
+  @bindable title;
+  @bindable building;
 }

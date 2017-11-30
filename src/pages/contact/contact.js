@@ -1,3 +1,4 @@
 export class Contact {
-  message = 'My Contact';
+  title = 'Contact';
+  building = 'images/wawel.png';
 }

@@ -1,3 +1,4 @@
 export class Home {
-  pageTitle = 'My Home';
+  title = 'Home';
+  building = 'images/wawel.png';
 }

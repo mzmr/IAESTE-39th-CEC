@@ -1,13 +1,12 @@
 <template>
-  <require from="resources/elements/building-shape"></require>
-  
+  <require from="styles/building-shape.css"></require>
+
   <section class="page-top">
     <div class="slogan-container">
       <div class="container inner-slogan-container">
-        <h1 repeat.for="row of router.navigation" if.bind="row.isActive"
-          class="text-uppercase text-center slogan">${row.title}</h1>
+        <h1 class="text-uppercase text-center slogan">${title}</h1>
+        <div class="building-shape" css="background-image: url(${building})"></div>
       </div>
     </div>
-    <building-shape containerless></building-shape>
   </section>
 </template>

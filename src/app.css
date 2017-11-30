@@ -195,16 +195,21 @@ html, body {
   margin-bottom:-60px;
 }
 
-/* .building-shape {
-  background: url('images/wawel.png') no-repeat;
-  margin-top: -200px;
+.border-left-bottom {
+  background: url('images/border-left-bottom.png') no-repeat;
+  margin-top: -60px;
+}
+
+.building-shape {
+  background-repeat: no-repeat;
   background-size: auto 200px;
   background-repeat: no-repeat;
   z-index: 3;
-  position: relative;
+  position: absolute;
   height:200px;
   width:100%;
-} */
+  bottom: 0;
+}
 
 .border-left-bottom, .border-right-top {
   background-size: 100% 60px;
@@ -261,4 +266,30 @@ html, body {
 
 .footer-container .sponsor-name {
   margin-top: 20px;
+}
+
+.break-background {
+  padding-bottom:0;
+  margin-bottom:0;
+  background-image: url('images/slogan-pattern.png');
+  width: 100%;
+  height: 100px;
+}
+
+.page-break-top {
+  margin-top: 50px;
+}
+
+.page-break-bottom {
+  margin-bottom: 50px;
+}
+
+.page-break-flipped .border-left-bottom,
+.page-break-flipped .border-right-top {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.page-content h1 {
+  margin-bottom: 35px;
 }

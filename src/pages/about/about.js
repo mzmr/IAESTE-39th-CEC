@@ -1,3 +1,4 @@
 export class About {
-  pageTitle = 'About';
+  title = 'About';
+  building = 'images/wawel.png';
 }

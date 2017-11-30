@@ -1,3 +1,4 @@
 export class Program {
-  message = 'My Program';
+  title = 'Program';
+  building = 'images/wawel.png';
 }

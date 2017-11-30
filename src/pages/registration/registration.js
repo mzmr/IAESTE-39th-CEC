@@ -1,3 +1,4 @@
 export class Registration {
-  message = 'My Registration';
+  title = 'Registration';
+  building = 'images/mariacki.png';
 }
