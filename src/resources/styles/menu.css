@@ -1,0 +1,110 @@
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-header .navbar-brand {
+  color: #cb212a;
+  font-size: 18px;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+  font-size: 26px;
+  font-family: robotoLight;
+}
+
+.navbar-default .navbar-header .navbar-toggle {
+  background:transparent;
+  border:transparent;
+}
+
+.navbar-default .navbar-header .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar, .navbar-default {
+  background:white;
+  border:none;
+  z-index:9999 !important;
+  position:absolute;
+  width:100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width:768px) {
+  .navbar, .navbar-default {
+    padding: 15px;
+  }
+
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: #cb212a;
+    border: 1px solid transparent;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > .active > a:hover {
+    border-color: #cb212a;
+    color: #cb212a;
+  }
+  
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover {
+    font-family: robotoBold;
+  }
+
+  .navbar-default .navbar-nav > .active > a:focus {
+    background: transparent;
+    color: #cb212a;
+  }
+
+  .navbar-brand > .navbar-logo {
+    width: 90px;
+    margin-right:25px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar, .navbar-default, .navbar-collapse {
+    padding:0;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    background-color: #0e4468;
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    background-color: #156193;
+    color:white;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color:#0e4468;
+    background-color: white;
+    font-family: robotoBold;
+  }
+
+  .nav {
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+  
+  .navbar-brand > .navbar-logo {
+    max-height: 100%;
+    margin-right:10px;
+  }
+  
+  .navbar-brand {
+    max-height:100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}

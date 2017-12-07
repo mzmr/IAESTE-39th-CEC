@@ -1,0 +1,47 @@
+.page-bottom .sponsor-elem .logo {
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container {
+  color: white;
+  padding-bottom:0;
+  margin-bottom:0;
+  background-color: #505050;
+  background-image: url('images/slogan-pattern.png');
+  width:100%;
+}
+
+.footer-container .footer-header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  background: white;
+  left: 0;
+  right: 0;
+}
+
+.footer-container {
+  padding-top: 80px;
+}
+
+.footer-container .sponsor-data,
+.footer-container .sponsor-name,
+.footer-container .sponsor-name:link,
+.footer-container .sponsor-name:visited,
+.footer-container .sponsor-name:hover,
+.footer-container .sponsor-name:active {
+  color:white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.footer-container .sponsor-elem {
+  margin-top: 80px;
+}
+
+.footer-container .sponsor-name {
+  margin-top: 20px;
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "name": "friday",
+    "date": "28 October",
+    "events": [
+      {
+        "startHour": "14:00",
+        "endHour": "18:00",
+        "title": "CER Reps meeting"
+      },
+      {
+        "startHour": "14:00",
+        "endHour": "22:00",
+        "title": "Check in"
+      },
+      {
+        "startHour": "19:00",
+        "endHour": "20:00",
+        "title": "Dinner"
+      },
+      {
+        "startHour": "20:00",
+        "endHour": "20:30",
+        "title": "Opening ceremony"
+      },
+      {
+        "startHour": "20:45",
+        "endHour": "21:00",
+        "title": "Leaving for the party"
+      },
+      {
+        "startHour": "21:00",
+        "endHour": null,
+        "title": "Welcome Party"
+      }
+    ]
+  },
+
+  {
+    "name": "saturday",
+    "date": "29 October",
+    "events": [
+      {
+        "startHour": "07:00",
+        "endHour": "08:00",
+        "title": "Waking up"
+      },
+      {
+        "startHour": "08:00",
+        "endHour": "08:50",
+        "title": "Breakfast"
+      },
+      {
+        "startHour": "09:00",
+        "endHour": "09:30",
+        "title": "CER presentation"
+      },
+      {
+        "startHour": "09:30",
+        "endHour": "09:45",
+        "title": "Leaving for WS"
+      },
+      {
+        "startHour": "10:00",
+        "endHour": "11:30",
+        "title": "WS I part I"
+      },
+      {
+        "startHour": "11:30",
+        "endHour": "11:45",
+        "title": "Coffee break"
+      },
+      {
+        "startHour": "11:45",
+        "endHour": "13:15",
+        "title": "WS I part II"
+      },
+      {
+        "startHour": "13:15",
+        "endHour": "14:45",
+        "title": "Lunch"
+      },
+      {
+        "startHour": "14:45",
+        "endHour": "15:00",
+        "title": "Leaving for WS"
+      },
+      {
+        "startHour": "15:15",
+        "endHour": "16:45",
+        "title": "WS II part I"
+      },
+      {
+        "startHour": "16:45",
+        "endHour": "17:00",
+        "title": "Coffeee break"
+      },
+      {
+        "startHour": "17:00",
+        "endHour": "18:30",
+        "title": "WS II part II"
+      },
+      {
+        "startHour": "18:45",
+        "endHour": "19:00",
+        "title": "Group photo"
+      },
+      {
+        "startHour": "19:00",
+        "endHour": "20:15",
+        "title": "Dinner"
+      },
+      {
+        "startHour": "20:15",
+        "endHour": "21:00",
+        "title": "Preparation and leaving"
+      },
+      {
+        "startHour": "21:15",
+        "endHour": null,
+        "title": "International Evening"
+      }
+    ]
+  },
+
+  {
+    "name": "sunday",
+    "date": "30 October",
+    "events": [
+      {
+        "startHour": "07:00",
+        "endHour": "09:00",
+        "title": "Waking up"
+      },
+      {
+        "startHour": "07:00",
+        "endHour": "10:00",
+        "title": "Check out"
+      },
+      {
+        "startHour": "09:00",
+        "endHour": "10:00",
+        "title": "Breakfast"
+      },
+      {
+        "startHour": "10:00",
+        "endHour": "10:30",
+        "title": "Closing ceremony"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+<template>
+  <div class="col-md-8 col-md-offset-2">
+    <table>
+      <tbody>
+        <tr repeat.for="event of day.events" if.bind="isReady">
+          <td>${event.startHour} - ${event.endHour}</td>
+          <td>${event.title}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
