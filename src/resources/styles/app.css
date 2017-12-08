@@ -19,6 +19,7 @@ html, body {
   left: 0;
   right: 0;
   font-family: robotoLight;
+  color: #555;
 }
 
 *, *::before, *::after {
@@ -83,7 +84,7 @@ html, body {
   margin-bottom: 35px;
 }
 
-.rounded-container {
+.content-container {
   background: white;
   width: 100% - 40px;
   padding-top: 80px;
@@ -93,18 +94,18 @@ html, body {
   margin-right: 20px;
 }
 
-.rounded-container:last-child {
+.content-container:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width:768px) {
-  .rounded-container {
+  .content-container {
     /* border-radius: 110px; */
   }
 }
 
 @media (max-width:767px) {
-  .rounded-container {
+  .content-container {
     /* border-radius: 70px; */
   }
 }

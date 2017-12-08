@@ -1,22 +1,22 @@
 <template>
   <require from="resources/elements/slogan"></require>
+  <require from="resources/styles/program.css"></require>
+
   <slogan title.bind="title" building.bind="building" containerless></slogan>
 
   <section class="page-content">
-    <div class="rounded-container">
-      <div class="container">
-        <div class="col-md-12">
-          <ul class="program-day-list list-unstyled">
-            <li repeat.for="day of days" if.bind="isReady" class="${day.name === $parent.selectedDayName ? 'active' : ''}">
-              <a route-href="route: selected-day; params.bind: {day:day.name}" click.delegate="$parent.select(day)">
-                ${day.date}
-                <span>${day.name}</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <router-view></router-view>
+    <div class="container content-container">
+      <div class="col-md-12">
+        <ul class="program-day-list list-unstyled">
+          <li repeat.for="day of days" if.bind="isReady" class="${day.name === $parent.selectedDayName ? 'active' : ''}">
+            <a route-href="route: selected-day; params.bind: {day:day.name}" click.delegate="$parent.select(day)">
+              ${day.date}
+              <span class="text-capitalize">${day.name}</span>
+            </a>
+          </li>
+        </ul>
       </div>
+      <router-view></router-view>
     </div>
   </section>
 </template>

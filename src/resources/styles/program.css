@@ -1,0 +1,61 @@
+.program-day-list {
+  text-align: center;
+}
+
+.program-day-list li {
+  display: inline-block;
+  border: none;
+  
+  color: #fff;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  background: #ff5c52;
+  -moz-transition: .2s all;
+  -o-transition: .2s all;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.program-day-list li.active {
+  background: #cb212a;
+}
+
+.program-day-list li span {
+  display: block;
+  font-family: robotoBold;
+}
+
+.program-day-list a {
+  display: inline-block;
+  padding: 20px;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.event-table {
+  display: table;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.event-table tbody td:first-child {
+  width: 140px;
+}
+
+.event-table tbody td {
+  text-align: left;
+  padding: 20px 20px;
+  border-top: 1px solid #ededed;
+  font-size: 16px;
+  color: #666;
+}
+
+.event-table tbody td:nth-child(2) {
+  font-family: robotoBold;
+}

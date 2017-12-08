@@ -1,6 +1,10 @@
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-header .navbar-brand {
   color: #cb212a;
   font-size: 18px;
+  -moz-transition: .7s all;
+  -o-transition: .7s all;
+  -webkit-transition: .7s all;
+  transition: .4s all;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -14,20 +18,21 @@
 }
 
 .navbar-default .navbar-header .navbar-toggle .icon-bar {
-  background-color: white;
+  background-color: #cb212a;
 }
 
 .navbar, .navbar-default {
   background:white;
   border:none;
+  border-bottom: 1px #cb212add solid;
   z-index:9999 !important;
-  position:absolute;
   width:100%;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
+  max-height:100%;
 }
 
 @media (min-width:768px) {
@@ -40,7 +45,7 @@
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover {
     background-color: transparent;
-    color: #cb212a;
+    color: #cb212c;
     border: 1px solid transparent;
   }
 
@@ -61,33 +66,82 @@
   }
 
   .navbar-brand > .navbar-logo {
-    width: 90px;
+    max-height:100%;
     margin-right:25px;
+  }
+
+  .navbar-brand {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .affix-top .navbar-brand > .navbar-logo {
+    -moz-transition: .7s all;
+    -o-transition: .7s all;
+    -webkit-transition: .7s all;
+    transition: .7s all;
+  }
+
+  .affix-top .navbar-brand {
+    -moz-transition: .7s all;
+    -o-transition: .7s all;
+    -webkit-transition: .7s all;
+    transition: .7s all;
+  }
+
+  .affix .navbar-brand > .navbar-logo {
+    margin-right: 10px;
+    -moz-transition: .7s all;
+    -o-transition: .7s all;
+    -webkit-transition: .7s all;
+    transition: .7s all;
+  }
+
+  .affix .navbar-brand {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    -moz-transition: .7s all;
+    -o-transition: .7s all;
+    -webkit-transition: .7s all;
+    transition: .7s all;
+  }
+
+  .affix .navbar-nav > li > a:hover,
+  .affix .navbar-nav > .active > a:hover {
+    border-color: transparent;
   }
 }
 
 @media (max-width:767px) {
-  .navbar, .navbar-default, .navbar-collapse {
+  .navbar, .navbar-default, .navbar-default .navbar-collapse {
     padding:0;
+    border-top: none;
+  }
+
+  .navbar-default {
+    border-bottom: 1px solid #cb212a;
   }
 
   .navbar-default .navbar-nav > li > a {
-    background-color: #0e4468;
+    background-color: white;
     padding-top:15px;
     padding-bottom:15px;
   }
 
+  .navbar-default .navbar-nav > li {
+    border-top: 1px solid #ffdfe1;
+  }
+
   .navbar-default .navbar-nav > li > a:hover,
   .navbar-default .navbar-nav > li > a:focus {
-    background-color: #156193;
+    background-color: #cb212a;
     color:white;
   }
 
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-    color:#0e4468;
-    background-color: white;
+    color: white;
+    background-color: #cb212a;
     font-family: robotoBold;
   }
 
@@ -103,8 +157,24 @@
   }
   
   .navbar-brand {
-    max-height:100%;
     padding-top: 7px;
     padding-bottom: 7px;
   }
+}
+
+.affix-top {
+  background-color: #ffff;
+  -moz-transition: .7s all;
+  -o-transition: .7s all;
+  -webkit-transition: .7s all;
+  transition: .7s all;
+}
+
+.affix {
+  background-color: #fffe;
+  padding: 0;
+  -moz-transition: .7s all;
+  -o-transition: .7s all;
+  -webkit-transition: .7s all;
+  transition: .7s all;
 }

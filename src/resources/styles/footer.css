@@ -40,6 +40,15 @@
 
 .footer-container .sponsor-elem {
   margin-top: 80px;
+  background-color: rgba(0,0,0,0);
+  -moz-transition: .2s all;
+  -o-transition: .2s all;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.footer-container .sponsor-elem:hover {
+  background-color: rgba(0,0,0,0.2);
 }
 
 .footer-container .sponsor-name {
