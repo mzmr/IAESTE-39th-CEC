@@ -6,6 +6,7 @@ import processCSS from './process-css';
 import copyFiles from './copy-files';
 import watch from './watch';
 import project from '../aurelia.json';
+import prepareFontAwesome from './prepare-font-awesome';
 
 let build = gulp.series(
   readProjectConfiguration,
@@ -13,7 +14,8 @@ let build = gulp.series(
     transpile,
     processMarkup,
     processCSS,
-    copyFiles
+    copyFiles,
+    prepareFontAwesome
   ),
   writeBundles
 );

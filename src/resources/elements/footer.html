@@ -1,26 +1,43 @@
 <template>
   <require from="resources/styles/footer.css"></require>
-  <!-- <require from="resources/elements/border-right-top"></require>
 
-  <border-right-top></border-right-top> -->
   <section class="page-bottom">
-    <div class="footer-container">
+    <div class="content-container sponsor-container">
       <div class="container">
         <h1 class="footer-header">Sponsors</h1>
-        <div class="sponsor-container">
-          <div class="row justify-content-around">
-            <div repeat.for="sponsor of sponsors" class="sponsor-elem col-sm-6 col-md-4"
-                if.bind="isReady">
-              <a href.bind="sponsor.website" class="sponsor-data">
-                <img class="logo" src.bind="sponsor.logo">
-                <h4 class="sponsor-name text-center">${sponsor.name}</h4>
-              </a>
-            </div>
+        
+        <div class="row justify-content-around">
+          <div repeat.for="sponsor of sponsors" class="sponsor-elem col-sm-6 col-md-4"
+              if.bind="isReady">
+            <a href.bind="sponsor.website" class="sponsor-data">
+              <img class="logo" src.bind="sponsor.logo">
+              <h4 class="sponsor-name text-center">${sponsor.name}</h4>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="content-container footer-container">
       
     </div>
+
+    <footer>
+        <div>
+          <center>
+            <a href="https://www.facebook.com/IAESTE.AGH/?fref=ts">
+              <i class="fa fa-facebook" style="font-size:40px; padding:10px"></i>
+            </a>
+            <a href="https://www.instagram.com/iaeste_agh/">
+              <i class="fa fa-instagram" style="font-size:40px; padding:10px"></i>
+            </a>
+            <a href="https://www.google.pl/maps/place/IAESTE+AGH/@50.0655123,19.9145061,17z/data=!3m1!4b1!4m5!3m4!1s0x47165ba401cb4387:0xa0ef8134e459c0f6!8m2!3d50.0655123!4d19.9166948">
+              <i class="fa fa-map-marker" style="font-size:40px; padding:10px"></i>
+            </a>
+            <a href="mailto:iaeste@agh.edu.pl" style="font-size:40px; padding:10px"><i class="fa fa-envelope" style="font-size:40px; padding:10px"></i></a>
+          </center>
+        </div>
+    
+      </footer>
   </section>
 </template>

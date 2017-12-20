@@ -1,45 +1,62 @@
-// import { EventAggregator } from 'aurelia-event-aggregator';
 import { inject } from 'aurelia-framework';
 import { DataSource } from '../../data/data-source';
 
 @inject(DataSource)
 export class Program {
   title = 'Program';
-  building = 'images/wawel.png';
+  building = 'images/sukiennice.png';
   isReady = false;
   days = [];
-  selectedDayName = '';
+  selectedDay = null;
+  isToday = null;
 
   constructor(dataSource) {
     this.dataSource = dataSource;
   }
 
   created() {
-    this.dataSource.getData('page_content/program.json').then(result => {
-      this.days = result;
-      this.selectedDayName = this.days[0].name;
+    this.getCurrentDay().then(currentDayResult => {
+      this.selectedDay = currentDayResult[0];
+      this.isToday = currentDayResult[1];
       this.isReady = true;
     });
   }
 
-  configureRouter(config, router) {
-    config.title = 'Program';
-    config.options.root = 'program';
-    config.map([
-      {
-        route: '', redirect: 'friday', name: 'default-day'
-      },
-      {
-        route: ':day', name: 'selected-day',
-        moduleId: '../../resources/elements/program-day-events', title: 'Program Day'
-      }
-    ]);
+  getCurrentDay() {
+    return new Promise((resolve, reject) => {
+      this.dataSource.getData('page_content/program.json').then(result => {
+        this.days = result;
+        let today = this.findToday();
 
-    this.router = router;
+        if (today) {
+          resolve([today, true]);
+        } else {
+          resolve([this.days[0], false]);
+        }
+      });
+    });
+  }
+
+  findToday() {
+    let nowAsText = this.getNowAsText();
+    return this.days.filter(day => day.date === nowAsText)[0];
+  }
+
+  getNowAsText() {
+    let monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let now = new Date();
+    return now.getDate() + ' ' + monthNames[now.getMonth()];
   }
 
   select(day) {
-    this.selectedDayName = day.name;
+    this.selectedDay = day;
+    this.isToday = day.date === this.getNowAsText();
     return true;
+  }
+
+  getWeekDay(day) {
+    let dayNames = ['Sunday', 'Monday', 'Tuesday', 'Thursday', 'Wednesday', 'Friday', 'Saturday'];
+    let dayNumber = new Date(day.date + ' ' + new Date().getFullYear()).getDay();
+    return dayNames[dayNumber];
   }
 }

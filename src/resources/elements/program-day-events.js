@@ -1,26 +1,43 @@
-import { inject } from 'aurelia-framework';
-import { DataSource } from '../../data/data-source';
+import {bindable} from 'aurelia-framework';
 
-@inject(DataSource)
 export class ProgramDayEvents {
-  isReady = false;
+  @bindable day;
+  @bindable today;
 
-  constructor(dataSource) {
-    this.dataSource = dataSource;
+  isItNow(event) {
+    if (!this.today) {
+      return false;
+    }
+
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let currentTime = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
+
+    if (event.startHour > currentTime) {
+      return false;
+    }
+
+    if (event.endHour < currentTime) {
+      return false;
+    }
+
+    return true;
   }
 
-  activate(params, routeConfig) {
-    this.routeConfig = routeConfig;
-    this.dataSource.getData('page_content/program.json').then(result => {
-      this.day = result.filter(x => x.name === params.day)[0];
-      this.isReady = true;
-    });
+  startHour(event) {
+    if (event.startHour) {
+      return event.startHour;
+    }
+
+    return '-∞';
   }
 
-  getDayDetails(name) {
-    return new Promise(resolve => {
-      let found = this.days.filter(x => x.name === name)[0];
-      resolve(JSON.parse(JSON.stringify(found)));
-    });
+  endHour(event) {
+    if (event.endHour) {
+      return event.endHour;
+    }
+
+    return '∞';
   }
 }

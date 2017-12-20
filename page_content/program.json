@@ -1,7 +1,7 @@
 [
   {
-    "name": "friday",
-    "date": "28 October",
+    "id": 1,
+    "date": "17 December",
     "events": [
       {
         "startHour": "14:00",
@@ -37,9 +37,19 @@
   },
 
   {
-    "name": "saturday",
-    "date": "29 October",
+    "id": 2,
+    "date": "18 December",
     "events": [
+      {
+        "startHour": "00:20",
+        "endHour": "05:00",
+        "title": "Event just for the test"
+      },
+      {
+        "startHour": "00:20",
+        "endHour": null,
+        "title": "Another one"
+      },
       {
         "startHour": "07:00",
         "endHour": "08:00",
@@ -124,9 +134,19 @@
   },
 
   {
-    "name": "sunday",
-    "date": "30 October",
+    "id": 3,
+    "date": "19 December",
     "events": [
+      {
+        "startHour": "00:20",
+        "endHour": "02:00",
+        "title": "Jeszcze nie śpimy"
+      },
+      {
+        "startHour": "02:00",
+        "endHour": "03:00",
+        "title": "Zamierzamy iść spać!"
+      },
       {
         "startHour": "07:00",
         "endHour": "09:00",

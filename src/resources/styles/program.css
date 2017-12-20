@@ -18,7 +18,8 @@
   transition: .2s all;
 }
 
-.program-day-list li.active {
+.program-day-list li.active,
+.program-day-list li:hover {
   background: #cb212a;
 }
 
@@ -58,4 +59,9 @@
 
 .event-table tbody td:nth-child(2) {
   font-family: robotoBold;
+}
+
+.event-table tbody .active td {
+  background-color: #fa7929;
+  color: white;
 }

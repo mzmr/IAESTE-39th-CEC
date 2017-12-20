@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "type": "half",
+    "title": "Project Management",
+    "presenter": "Dawid Chudek",
+    "description": "Project Management has been considered by many to be a core  of every organization and company.  In this workshop we will be focusing more on the project management rules which has been helpful in IAESTE projects. We will show you what skills you need to develop your  project in every aspect. We will then practice, practice and practice with real IAESTE projects. In the last part of the workshop we will talk about Leadership and how to become an inspiring leader."
+  },
+  {
+    "id": 2,
+    "type": "half",
+    "title": "Handling and solving conflicts in teams",
+    "presenter": "Teresa Torzicky",
+    "description": "Whenever human beings work together different opinions and ways of working meet and conflicts can arise. To spot potential conflicts before the arise, prevent them from escalating and resolve conflict situations which already escalated are therefore very useful skills, when working for IAESTE. In this workshop we will look at conflicts from different points of view and will get to know some tools to prevent, deescalate and handle conflicts better. Beside that we will use our own experiences and some group activities as interactive learning and reflection opportunities."
+  },
+  {
+    "id": 3,
+    "type": "half",
+    "title": "Body language & (self) presentation",
+    "presenter": "Mark Feichtinger, David Škvařil",
+    "description": "Your body moves! Body language describes the conscious and unconscious movements and postures by which attitudes and feelings are communicated. In this workshop, we will first focus on the ability to read our opponent's body language correctly and how to avoid common mistakes. In the second part, we will discover how we can utilize body language to become better speakers."
+  },
+  {
+    "id": 4,
+    "type": "half",
+    "title": "Leadership & Impact",
+    "presenter": "Marco Sulzgruber, Ugurcan Sari",
+    "description": "We will address different aspects of leadership such as motivating each member of your LC and understand different roles in a team. The aim is to gain new insight from each other's experience​s. This workshop is useful if you are recently new in a (board) position where you need to coordinate and motivate others, or if you're generally interested in group dynamics and strategies for creating a team spirit."
+  },
+  {
+    "id": 5,
+    "type": "half",
+    "title": "Fundraising for IAESTE Trips",
+    "presenter": "Nicolas Willekens, Mohamed Hayek",
+    "description": "Are you planning a twinning with another IAESTE LC? Are you looking for ways to fund this twinning? Then join our workshop! In this workshop we will systematically go through easy and effective methods to fund the perfect twinning event. The workshop will include a practical case where you will have the chance to apply the knowledge you’ve learned and get feedback and advice from us."
+  },
+  {
+    "id": 6,
+    "type": "half",
+    "title": "Strategy Implementation and Development",
+    "presenter": "Elisenda Garzo, Mohamed Hayek",
+    "description": "Writing down goals and maybe even a strategy on how to reach those goals is nice, but without implementation, it will never be more than a piece of paper. We´ll go through different methods - with a focus on “STEPS - Steps To Efficient Problem Solving” - to help us coming up with a suitable strategy for different problems and situations. HANDS ON - you’ll use your IAESTE experience for the practical activities which will be both IAESTE 2020 and LC level oriented."
+  },
+  {
+    "id": 7,
+    "type": "half",
+    "title": "LC Managment",
+    "presenter": "Katerina Esnerova, David Skvaril",
+    "description": "What is an LC? What is management? Come and discover at our epic workshop! In the first part we will discuss what you need to be a good manager and give you a chance to improve your skills through practical exercises. In the second part we will provide you with insights into how big and small Czech LCs are structured and managed and you will experience first-hand what it is like to be an LC manager. Together, we offer more than 8 years of IAESTE experience and we are ready to share it!"
+  },
+  {
+    "id": 8,
+    "type": "half",
+    "title": "EVENT MANAGEMENT",
+    "presenter": "Tomáš Petrek, Lenka Kaderabkova",
+    "description": "Do you want to become an awesome event coordinator? Is organising and seeking for new challenges your passion? Then, this workshop is your best choice! Join our engaging and interactive workshop, full of interesting topics and secret tips, all based on our experience in event management. Funny stories, situations from real life and team competition included. Together, we will cover every important aspect of event management from planning, setting budget, PR,  to dealing with crisis situations and team motivation. Let’s have some fun together while becoming the best event coordinators in the galaxy."
+  },
+  {
+    "id": 9,
+    "type": "half",
+    "title": "How to become a WS Leader",
+    "presenter": "Boris Raus",
+    "description": "Knowledge transfer and knowledge sharing are the buzzwords of today, but that is exactly the key of this WS. This is a meta-workshop about doing a workshop. If you like meta (not meth) and like workshops and want to better your workshop leading, communication, leadership, and presentation skills - this is the right place for you!"
+  },
+  {
+    "id": 10,
+    "type": "half",
+    "title": "Jobraising",
+    "presenter": "Boris Raus, Ugurcan Sari",
+    "description": "IAESTE is about sending students to learn to acquire new skills, experience cultures and meeting new friends. The key here is the exchange. Without a good exchange process, IAESTE wouldn't have its core purpose. At the heart of the exchange process are the offers YOU can get for your LC in the Jobraising process. Want to know how? That is awesome! Come to Vienna and see you there :)"
+  },
+  {
+    "id": 11,
+    "type": "full",
+    "title": "Sustainable and Efficient Improvement",
+    "presenter": "David Zenisek, Jan Zajicek",
+    "description": "Learn the legendary magical approach of sustainable improvement methodologies - Lean and Six Sigma! On our Paper-Airplane Manufacturing simulation you will learn to reduce waste and defects in your everyday routines. You will become systematic and efficient in whatever you do. Satisfaction and fun guaranteed by David and Jan from Czech Republic!"
+  },
+  {
+    "id": 12,
+    "type": "full",
+    "title": "CER Development Group",
+    "presenter": "Michal Benes",
+    "description": "Aim of this working group is to review and set goals and aims for Central European Region. We will conduct analysis of our aims and define the points of our interests. Outcome of this group will be short/long term strategy that is to be used for both the countries and regional management team. This group is meant just for National Secretaries and CER representatives."
+  }
+]

@@ -2,8 +2,8 @@
   <div class="col-md-8 col-md-offset-2">
     <table class="event-table">
       <tbody>
-        <tr repeat.for="event of day.events" if.bind="isReady">
-          <td>${event.startHour} - ${event.endHour}</td>
+        <tr repeat.for="event of day.events" class="${$parent.isItNow(event) ? 'active' : ''}">
+          <td>${$parent.startHour(event)} - ${$parent.endHour(event)}</td>
           <td>${event.title}</td>
         </tr>
       </tbody>
