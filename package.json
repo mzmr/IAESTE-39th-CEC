@@ -13,7 +13,6 @@
     "aurelia-google-maps": "^2.1.0",
     "bluebird": "^3.4.1",
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
     "jquery": "^2.2.4",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest"

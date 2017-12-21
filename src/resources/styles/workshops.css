@@ -1,0 +1,58 @@
+.workshops-type {
+  font-family: robotoBold;
+  margin: 0;
+}
+
+.workshop-section {
+  width: 100%;
+  margin-left: 0;
+  margin-right:0;
+  padding-left:0;
+  padding-right:0;
+}
+
+.workshop-section + .workshop-section {
+  /* margin-top: 20px; */
+}
+
+@media (min-width: 992px) {
+  .workshop-container .col-md-6:nth-child(odd) {
+    padding-left:20px;
+    padding-right:10px;
+  }
+
+  .workshop-container .col-md-6:nth-child(even) {
+    padding-left:10px;
+    padding-right:20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .workshop-container .col-md-6 {
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+
+.workshop-container .col-md-6 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.workshop-container .ws-content {
+  padding: 50px 20px 50px 20px;
+}
+
+.workshop-section > .ws-content:first-child {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.workshop-container h2 {
+  display: inline;
+}
+
+.workshop-section > .container {
+  width: 100%;
+}

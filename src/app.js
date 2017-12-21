@@ -1,4 +1,13 @@
+import { EventAggregator } from 'aurelia-event-aggregator';
+import { inject } from 'aurelia-framework';
+
+@inject(EventAggregator)
 export class App {
+
+  constructor(ea) {
+    this.ea = ea;
+  }
+
   configureRouter(config, router) {
     config.title = 'CEC';
     config.options.root = '/';
@@ -36,5 +45,9 @@ export class App {
     ]);
 
     this.router = router;
+  }
+
+  attached() {
+    this.ea.subscribe('router:navigation:complete', payload => window.scrollTo(0, 0));
   }
 }

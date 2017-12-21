@@ -1,5 +1,5 @@
 .page-bottom {
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .page-bottom .sponsor-elem .logo {
@@ -11,11 +11,8 @@
 
 .sponsor-container {
   color: white;
-  /* padding-bottom: 80px; */
-  /* padding-top: 80px; */
   margin-bottom:0;
   background-color: #2d0e2b;
-  /* background-image: url('images/slogan-pattern.png'); */
 }
 
 .sponsor-container .footer-header::after {
@@ -39,7 +36,8 @@
 }
 
 .sponsor-container .sponsor-elem {
-  margin-top: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgba(0,0,0,0);
   -moz-transition: .2s all;
   -o-transition: .2s all;
@@ -53,4 +51,20 @@
 
 .sponsor-container .sponsor-name {
   margin-top: 20px;
+}
+
+.footer-container {
+  background-color: #1d091c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-container a {
+  color: white;
+  font-size:40px;
+  padding:10px;
+}
+
+.footer-container a:hover {
+  text-decoration: none;
 }
