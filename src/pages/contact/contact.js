@@ -12,7 +12,7 @@ export class Contact {
     infoWindow: {content: `
       <div id="content">
         <div id="siteNotice"></div>
-        <h1 id="firstHeading" class="firstHeading">IAESTE CEC 2018</h1>
+        <h2 id="firstHeading" class="firstHeading">IAESTE CEC 2018</h2>
         <div id="bodyContent">
           <p>We're waiting for <b>you</b>!</p>
           <p><a href="http://iaeste.agh.edu.pl/cec">http://iaeste.agh.edu.pl/cec</a></p>

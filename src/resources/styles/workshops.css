@@ -11,42 +11,62 @@
   padding-right:0;
 }
 
-.workshop-section + .workshop-section {
-  /* margin-top: 20px; */
+.workshop-container .ws-content,
+.ws-type-container .content-container {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-@media (min-width: 992px) {
-  .workshop-container .col-md-6:nth-child(odd) {
-    padding-left:20px;
+.ws-type-container {
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
+
+.ws-type-container .content-container {
+  height:100%;
+  margin:0;
+  padding: 40px 0px;
+}
+
+@media (min-width: 1200px) {
+  /* left */
+  .workshop-container .col-md-6:nth-child(3n + 1) {
     padding-right:10px;
   }
 
+  /* middle */
+  .workshop-container .col-md-6:nth-child(3n + 2) {
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  /* right */
+  .workshop-container .col-md-6:nth-child(3n) {
+    padding-left:10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* left */
+  .workshop-container .col-md-6:nth-child(odd) {
+    padding-right:10px;
+  }
+
+  /* right */
   .workshop-container .col-md-6:nth-child(even) {
     padding-left:10px;
-    padding-right:20px;
-  }
-}
-
-@media (max-width: 991px) {
-  .workshop-container .col-md-6 {
-    padding-left:10px;
-    padding-right:10px;
   }
 }
 
 .workshop-container .col-md-6 {
   margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .workshop-container .ws-content {
-  padding: 50px 20px 50px 20px;
-}
-
-.workshop-section > .ws-content:first-child {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 35px;
+  height: 100%;
 }
 
 .workshop-container h2 {
@@ -55,4 +75,21 @@
 
 .workshop-section > .container {
   width: 100%;
+}
+
+.workshop-section .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workshop-section .row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  -moz-transition: .3s all;
+  -o-transition: .3s all;
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }

@@ -15,13 +15,15 @@
 		</div>
 
 		<div class="container workshop-section" if.bind="isReady" repeat.for="wsType of workshops">
-			<div class="content-container">
-				<h1 class="workshops-type text-uppercase text-center">${wsType.type}</h1>
+			<div class="ws-type-container">
+				<div class="content-container">
+					<h1 class="workshops-type text-uppercase text-center">${wsType.type}</h1>
+				</div>
 			</div>
 
 			<div class="workshop-container container">
 				<div class="row justify-content-around">
-					<div class="col-md-6" repeat.for="workshop of wsType.list">
+					<div class="col-md-6 col-lg-4" id="${workshop.id}" repeat.for="workshop of wsType.list">
 						<div class="content-container ws-content">
 							<h2>${workshop.title}</h2>
 							<h4>By: ${workshop.presenter}</h4>
