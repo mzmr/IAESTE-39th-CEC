@@ -1,4 +1,4 @@
 export class Registration {
   title = 'Registration';
-  building = 'images/mariacki.png';
+  building = 'resources/images/buildings/mariacki.png';
 }

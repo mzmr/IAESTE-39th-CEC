@@ -1,4 +1,4 @@
 export class About {
   title = 'About';
-  building = 'images/sukiennice.png';
+  building = 'resources/images/buildings/sukiennice.png';
 }

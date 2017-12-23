@@ -1,8 +1,3 @@
-/* @font-face {
-  font-family: robotoThin;
-  src: url('./src/resources/fonts/roboto-thin.ttf');
-} */
-
 @font-face {
   font-family: robotoLight;
   src: url('resources/fonts/roboto-light.ttf');
@@ -45,47 +40,6 @@ body {
 
 *:focus {
   outline: none;
-}
-
-.border-right-top {
-  background: url('images/border-right-top.png') no-repeat;
-  margin-bottom:-60px;
-}
-
-.border-left-bottom {
-  background: url('images/border-left-bottom.png') no-repeat;
-  margin-top: -60px;
-}
-
-.border-left-bottom, .border-right-top {
-  background-size: 100% 60px;
-  background-repeat: no-repeat;
-  z-index: 3;
-  position: relative;
-  height:60px;
-  width:100%;
-}
-
-.break-background {
-  padding-bottom:0;
-  margin-bottom:0;
-  background-image: url('images/slogan-pattern.png');
-  width: 100%;
-  height: 100px;
-}
-
-.page-break-top {
-  margin-top: 50px;
-}
-
-.page-break-bottom {
-  margin-bottom: 50px;
-}
-
-.page-break-flipped .border-left-bottom,
-.page-break-flipped .border-right-top {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
 .page-content {

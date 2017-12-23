@@ -4,7 +4,7 @@ import { DataSource } from '../../data/data-source';
 @inject(DataSource)
 export class Workshops {
   title = 'Workshops';
-  building = 'images/wawel.png';
+  building = 'resources/images/buildings/wawel.png';
   workshops = [{}, {}];
   isReady = false;
 

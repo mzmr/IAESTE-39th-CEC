@@ -2,26 +2,26 @@
   {
     "name": "Sponsor 1",
     "website": "http://www.sponsor1.com",
-    "logo": "images/sponsor-logo/no-logo.png"
+    "logo": "resources/images/sponsor-logo/no-logo.png"
   },
   {
     "name": "Sponsor 2",
     "website": "https://www.sponsor2.com",
-    "logo": "images/sponsor-logo/no-logo.png"
+    "logo": "resources/images/sponsor-logo/no-logo.png"
   },
   {
     "name": "Sponsor 3",
     "website": "https://www.sponsor3.com",
-    "logo": "images/sponsor-logo/no-logo.png"
+    "logo": "resources/images/sponsor-logo/no-logo.png"
   },
   {
     "name": "Sponsor 4",
     "website": "https://www.sponsor4.com",
-    "logo": "images/sponsor-logo/no-logo.png"
+    "logo": "resources/images/sponsor-logo/no-logo.png"
   },
   {
     "name": "Sponsor 5",
     "website": "https://www.sponsor5.com",
-    "logo": "images/sponsor-logo/no-logo.png"
+    "logo": "resources/images/sponsor-logo/no-logo.png"
   }
 ]
