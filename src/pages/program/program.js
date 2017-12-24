@@ -49,8 +49,8 @@ export class Program {
   }
 
   select(day) {
-    this.selectedDay = day;
     this.isToday = day.date === this.getNowAsText();
+    this.selectedDay = day;
     return true;
   }
 

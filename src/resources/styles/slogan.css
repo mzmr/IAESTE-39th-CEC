@@ -1,12 +1,12 @@
 @media (min-width:768px) {
   .slogan-container {
-    height: 320px;
+    height: 320px;/*170px; /*320*/
   }
 }
 
 @media (max-width:767px) {
   .slogan-container {
-    height: 300px;
+    height: 300px;/*115px; /*300*/
   }
 }
 

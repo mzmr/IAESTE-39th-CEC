@@ -8,6 +8,9 @@ export class Footer {
 
   constructor(dataSource) {
     this.dataSource = dataSource;
+  }
+
+  attached() {
     this.dataSource.getData('page_content/sponsors.json').then(result => {
       this.sponsors = result;
       this.isReady = true;
