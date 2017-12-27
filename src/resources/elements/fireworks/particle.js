@@ -46,8 +46,8 @@ export class Particle {
     // This gives the particles within a firework explosion an appealing variance.
     this.hue = random(hue - this.PARTICLE_HUE_VARIANCE, hue + this.PARTICLE_HUE_VARIANCE);
     // Set brightness.
-    // this.brightness = random(this.PARTICLE_BRIGHTNESS_MIN, this.PARTICLE_BRIGHTNESS_MAX);
-    this.brightness = 100;
+    this.brightness = random(this.PARTICLE_BRIGHTNESS_MIN, this.PARTICLE_BRIGHTNESS_MAX);
+    // this.brightness = 100;
     // Set decay.
     this.decay = random(this.PARTICLE_DECAY_MIN, this.PARTICLE_DECAY_MAX);
     // Set speed.

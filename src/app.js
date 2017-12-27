@@ -13,12 +13,7 @@ export class App {
     config.options.root = '/';
     config.map([
       {
-        route: ['', 'home'], name: 'home',
-        nav: true,
-        moduleId: './pages/home/home', title: 'Home'
-      },
-      {
-        route: 'about', name: 'about',
+        route: ['', 'about'], name: 'about',
         nav: true,
         moduleId: './pages/about/about', title: 'About'
       },
@@ -33,6 +28,11 @@ export class App {
         moduleId: './pages/workshops/workshops', title: 'Workshops'
       },
       {
+        route: 'accommodation', name: 'accommodation',
+        nav: true,
+        moduleId: './pages/accommodation/accommodation', title: 'Accommodation'
+      },
+      {
         route: 'registration', name: 'registration',
         nav: true,
         moduleId: './pages/registration/registration', title: 'Registration'
@@ -41,6 +41,11 @@ export class App {
         route: 'contact', name: 'contact',
         nav: true,
         moduleId: './pages/contact/contact', title: 'Contact'
+      },
+      {
+        route: 'anniversary', name: 'anniversary',
+        nav: true,
+        moduleId: './pages/anniversary/anniversary', title: '70th Anniversary', settings: { isSpecial: true }
       }
     ]);
 

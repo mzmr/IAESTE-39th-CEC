@@ -36,6 +36,10 @@
 }
 
 @media (min-width:768px) {
+  .navbar-nav > li {
+    margin-left: -1px;
+  }
+
   .navbar, .navbar-default {
     padding: 15px;
   }
@@ -66,6 +70,21 @@
     border: 1px solid #cb212a;
   }
 
+  .navbar-default .navbar-nav > .special > a {
+    color: white;
+    font-family: robotoBold;
+    background-color: #a53a9e;
+    margin-left:10px;
+  }
+
+  .navbar-default .navbar-nav > .special > a:hover,
+  .navbar-default .navbar-nav > .special > a:focus,
+  .navbar-default .navbar-nav > .special.active > a {
+    color: #a53a9e;
+    border-color: #a53a9e;
+    background-color: transparent;
+  }
+
   .navbar-brand > .navbar-logo {
     max-height:100%;
     margin-right:25px;
@@ -88,7 +107,9 @@
   .affix .navbar-nav > li > a:focus,
   .affix .navbar-nav > .active > a,
   .affix .navbar-nav > .active > a:hover,
-  .affix .navbar-nav > .active > a:focus {
+  .affix .navbar-nav > .active > a:focus,
+  .affix .navbar-nav > .special > a:hover,
+  .affix .navbar-nav > .special > a:focus {
     border-color: transparent;
   }
 }
@@ -153,11 +174,17 @@
 
 .affix-top {
   background-color: #ffff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .affix {
   background-color: #fffe;
   padding: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 /* earlier collapsing */

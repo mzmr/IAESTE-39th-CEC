@@ -1,0 +1,21 @@
+.anniversary-top .building-container {
+  display: none;
+}
+
+.anniversary-top .page-top-container {
+  background: #2d0e2b;
+  background: -moz-linear-gradient(top, #2d0e2b 0%, #2d0e2b 30%, #2d0e2b55 100%);
+  background: -webkit-linear-gradient(top, #2d0e2b 0%, #2d0e2b 30%,#2d0e2b55 100%);
+  background: linear-gradient(to bottom, #2d0e2b 0%, #2d0e2b 30%,#2d0e2b55 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0e2b', endColorstr='#2d0e2b55',GradientType=0 );
+}
+
+
+*:focus {
+  outline: none;
+}
+
+*::-moz-selection, *::selection {
+  color: red;
+  background-color: yellow;
+}

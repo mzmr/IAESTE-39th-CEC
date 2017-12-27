@@ -53,8 +53,8 @@ export class Firework {
     // Set the acceleration.
     this.acceleration = this.FIREWORK_ACCELERATION;
     // Set the brightness.
-    // this.brightness = random(this.FIREWORK_BRIGHTNESS_MIN, this.FIREWORK_BRIGHTNESS_MAX);
-    this.brightness = 100;
+    this.brightness = random(this.FIREWORK_BRIGHTNESS_MIN, this.FIREWORK_BRIGHTNESS_MAX);
+    // this.brightness = 100;
     // Set the radius of click-target location.
     this.targetRadius = 2.5;
   }

@@ -4,7 +4,6 @@ import { DataSource } from '../../data/data-source';
 @inject(DataSource)
 export class Program {
   title = 'Program';
-  building = 'resources/images/buildings/sukiennice.png';
   isReady = false;
   days = [];
   selectedDay = null;
