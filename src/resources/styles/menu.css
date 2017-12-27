@@ -1,4 +1,5 @@
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-header .navbar-brand {
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-header .navbar-brand {
   color: #cb212a;
   font-size: 18px;
   -moz-transition: .4s all;
@@ -10,6 +11,10 @@
 .navbar-default .navbar-header .navbar-brand {
   font-size: 26px;
   font-family: robotoLight;
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 90vh;
 }
 
 .navbar-default .navbar-header .navbar-toggle {
@@ -173,14 +178,15 @@
 }
 
 .affix-top {
-  background-color: #ffff;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .affix {
-  background-color: #fffe;
+  zoom: 1;
+	filter: alpha(opacity=93);
+	opacity: 0.93;
   padding: 0;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);

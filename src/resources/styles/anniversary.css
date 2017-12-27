@@ -10,12 +10,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0e2b', endColorstr='#2d0e2b55',GradientType=0 );
 }
 
-
-*:focus {
-  outline: none;
+.anniversary-top fireworks {
+  position: absolute;
 }
 
-*::-moz-selection, *::selection {
-  color: red;
-  background-color: yellow;
+@media (min-width:768px) {
+  .anniversary-top fireworks {
+    top: 0;
+  }
+}
+
+@media (max-width:767px) {
+  .anniversary-top fireworks {
+    top: -20px;
+  }
 }
