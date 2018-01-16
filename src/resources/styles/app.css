@@ -59,6 +59,20 @@ h1 {
   margin-bottom: 0;
 }
 
+.content-container .container h1 {
+  margin-left: 40px;
+}
+
+.content-container .container h1::before {
+  content:'';
+  background:url('resources/images/flower.png');
+  height: 37px;
+  width: 28px;
+  margin-left: -40px;
+  position:absolute;
+  background-repeat: no-repeat;
+}
+
 @media (min-width:768px) {
   .content-container {
     /* border-radius: 10px; */

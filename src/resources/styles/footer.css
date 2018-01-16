@@ -68,3 +68,7 @@
 .footer-container a:hover {
   text-decoration: none;
 }
+
+.content-container .container h1.footer-header::before {
+  background:url('resources/images/flower_white.png');
+}
