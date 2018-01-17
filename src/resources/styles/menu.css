@@ -78,15 +78,15 @@
   .navbar-default .navbar-nav > .special > a {
     color: white;
     font-family: robotoBold;
-    background-color: #a53a9e;
+    background-color: #cb212a;
     margin-left:10px;
   }
 
   .navbar-default .navbar-nav > .special > a:hover,
   .navbar-default .navbar-nav > .special > a:focus,
   .navbar-default .navbar-nav > .special.active > a {
-    color: #a53a9e;
-    border-color: #a53a9e;
+    color: #cb212a;
+    border-color: #cb212a;
     background-color: transparent;
   }
 
@@ -164,15 +164,15 @@
   .navbar-default .navbar-nav > .special > a {
     color: white;
     font-family: robotoBold;
-    background-color: #a53a9e;
+    background-color: #cb212a;
     margin-left:10px;
   }
 
   .navbar-default .navbar-nav > .special > a:hover,
   .navbar-default .navbar-nav > .special > a:focus,
   .navbar-default .navbar-nav > .special.active > a {
-    color: #a53a9e;
-    border-color: #a53a9e;
+    color: #cb212a;
+    border-color: #cb212a;
     background-color: transparent;
   }
 

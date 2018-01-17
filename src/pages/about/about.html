@@ -1,5 +1,6 @@
 <template>
   <require from="resources/elements/slogan"></require>
+  <require from="resources/elements/europe-map"></require>
   
   <slogan title.bind="title" building.bind="building" containerless></slogan>
 
@@ -8,14 +9,21 @@
       <div class="container">
         <h1>About CEC</h1>
         <p>The Central European Convention is the major international event of the Central European Region happening twice every year. Main aims of CEC is to educate, cooparate, motivate each other and discuss future plans.</p>
-        <p>CEC connects all of the countries associated with CER- Austria, Czech Republic, Slovakia, Hungary, Slovenia, Croatia, Poland, Bosnia and Herzegovina, IAESTE Dresden, IAESTE München, Turkey and Macedonia. Furthermore the other countries like: Malta, Spain, Belgium and all of the Scandinavian region participate in this conference. CEC is organised twice a year. The first one was held in Croatia in 1998. It means that during the 39th edition of this event we will be celebrating 20 years of CEC.</p>
+        <p>CEC connects all of the countries associated with CER - Austria, Czech Republic, Slovakia, Hungary, Slovenia, Croatia, Poland, Bosnia and Herzegovina, IAESTE Dresden, IAESTE München, Turkey and Macedonia. Furthermore the other countries like: Malta, Spain, Belgium and all of the Scandinavian region participate in this conference. CEC is organised twice a year. The first one was held in Croatia in 1998. It means that during the 39th edition of this event we will be celebrating 20 years of CEC.</p>
       </div>
     </div>
 
     <div class="content-container">
       <div class="container">
         <h1>CER</h1>
-        <p>IAESTE CER was established in 2012. The aim was to integrate all of the committees in Central Europe. IAESTE Central European Region aims for exchanging informations, ideas, knowledge between students as well as motivating and showing new solutions.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>IAESTE CER was established in 2012. The aim was to integrate all of the committees in Central Europe. IAESTE Central European Region aims for exchanging informations, ideas, knowledge between students as well as motivating and showing new solutions.</p>
+          </div>
+          <div class="col-md-6">
+            <europe-map containerless></europe-map>
+          </div>
+        </div>
       </div>
     </div>
 
