@@ -3,35 +3,33 @@ export class EuropeMap {
   constructor() {
     this.countries = [
       { name: 'Austria',
-        title: 'IAESTE Austria',
-        www: 'https://www.iaeste.at/en' },
+        www: 'https://www.iaeste.at/en',
+        img: 'at' },
       { name: 'Bosnia and Herzegovina',
-        title: 'IAESTE Bosnia and Herzegovina',
-        www: 'http://www.iaeste.ba' },
+        www: 'http://www.iaeste.ba',
+        img: 'ba' },
       { name: 'Croatia',
-        title: 'IAESTE Croatia',
-        www: 'http://www.iaeste.hr' },
+        www: 'http://www.iaeste.hr',
+        img: 'hr' },
       { name: 'Czech Republic',
-        title: 'IAESTE Czech Republic',
-        www: 'https://www.iaeste.cz' },
+        www: 'https://www.iaeste.cz',
+        img: 'cz' },
       { name: 'Hungary',
-        title: 'IAESTE Hungary',
-        www: 'http://iaeste.hu' },
+        www: 'http://iaeste.hu',
+        img: 'hu' },
       { name: 'Poland',
-        title: 'IAESTE Poland',
-        www: 'https://www.iaeste.pl' },
+        www: 'https://www.iaeste.pl',
+        img: 'pl' },
       { name: 'Slovakia',
-        title: 'IAESTE Slovakia',
-        www: 'https://iaeste.sk' },
+        www: 'https://iaeste.sk',
+        img: 'sk' },
       { name: 'Slovenia',
-        title: 'IAESTE Slovenia',
-        www: 'http://iaeste.si' }
+        www: 'http://iaeste.si',
+        img: 'si' }
     ];
   }
 
   attached() {
-    // $('#regions_div').css('zoom', 1);
-
     google.charts.load('current', {
       'packages': ['geochart'],
       'mapsApiKey': 'AIzaSyDor7dD78pp2_iPfHH7MiW4lOYzCNEkDkY'
@@ -40,22 +38,32 @@ export class EuropeMap {
   }
 
   drawRegionsMap() {
-    let data = google.visualization.arrayToDataTable(
-      [['Country', 'Title']].concat(this.countries.map(c => [c.name, c.title]))
+    let data = new google.visualization.DataTable();
+    data.addColumn('string', 'Country');
+    data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
+    data.addRows(
+      this.countries.map(c => [
+        {v: c.name, f: ''},
+        '<div style="white-space:nowrap;">' +
+        '<img src="resources/images/flags/' + c.img + '.png" ' +
+        'style="margin-left:3px;margin-right:8px;border:solid 1px #ddd;display:inline-block;vertical-align:middle;"/>' +
+        '<span style="font-family:robotoBold;display:inline-block;vertical-align:middle;">' +
+        'IAESTE ' + c.name + '</span></div>'
+      ])
     );
 
     let options = {
+      allowHtml: true,
       region: '150',
       defaultColor: '#ff323d',
-      legend: 'none'
+      legend: 'none',
+      tooltip: {isHtml: true}
     };
 
     this.chart = new google.visualization.GeoChart(document.getElementById('europe-map'));
     this.chart.draw(data, options);
 
     google.visualization.events.addListener(this.chart, 'select', this.selectHandler.bind(this));
-    // google.visualization.events.addListener(chart, 'ready', function() { $('#regions_div').css('zoom', 1.4); });
-    // chart.draw(data, options);
   }
 
 
