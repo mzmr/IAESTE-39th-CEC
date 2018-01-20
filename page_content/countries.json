@@ -1,0 +1,56 @@
+{
+  "core": [
+    { "name": "Austria",
+      "www": "https://www.iaeste.at/en",
+      "code": "at"
+    }, {
+      "name": "Bosnia and Herzegovina",
+      "www": "http://www.iaeste.ba",
+      "code": "ba"
+    }, {
+      "name": "Croatia",
+      "www": "http://www.iaeste.hr",
+      "code": "hr"
+    }, {
+      "name": "Czech Republic",
+      "www": "https://www.iaeste.cz",
+      "code": "cz"
+    }, {
+      "name": "Hungary",
+      "www": "http://iaeste.hu",
+      "code": "hu"
+    }, {
+      "name": "Poland",
+      "www": "https://www.iaeste.pl",
+      "code": "pl"
+    }, {
+      "name": "Slovakia",
+      "www": "https://iaeste.sk",
+      "code": "sk"
+    }, {
+      "name": "Slovenia",
+      "www": "http://iaeste.si",
+      "code": "si"
+    }
+  ],
+   
+  "edge": [
+    {
+      "name": "LC Munich, Germany",
+      "www": "https://iaeste-muenchen.de",
+      "code": "de"
+    }, {
+      "name": "LC Dresden, Germany",
+      "www": "https://iaeste.tu-dresden.de/joomla/index.php/de/",
+      "code": "de"
+    }, {
+      "name": "Macedonia",
+      "www": "http://iaeste.org.mk",
+      "code": "mk"
+    }, {
+      "name": "Turkey",
+      "www": "http://www.iaeste.org.tr",
+      "code": "tr"
+    }
+  ]
+}

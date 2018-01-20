@@ -1,32 +1,13 @@
+import { DataSource } from '../../data/data-source';
+import { inject } from 'aurelia-framework';
+
+@inject(DataSource)
 export class EuropeMap {
 
-  constructor() {
-    this.countries = [
-      { name: 'Austria',
-        www: 'https://www.iaeste.at/en',
-        img: 'at' },
-      { name: 'Bosnia and Herzegovina',
-        www: 'http://www.iaeste.ba',
-        img: 'ba' },
-      { name: 'Croatia',
-        www: 'http://www.iaeste.hr',
-        img: 'hr' },
-      { name: 'Czech Republic',
-        www: 'https://www.iaeste.cz',
-        img: 'cz' },
-      { name: 'Hungary',
-        www: 'http://iaeste.hu',
-        img: 'hu' },
-      { name: 'Poland',
-        www: 'https://www.iaeste.pl',
-        img: 'pl' },
-      { name: 'Slovakia',
-        www: 'https://iaeste.sk',
-        img: 'sk' },
-      { name: 'Slovenia',
-        www: 'http://iaeste.si',
-        img: 'si' }
-    ];
+  constructor(dataSource) {
+    dataSource.getData('page_content/countries.json').then(result => {
+      this.countries = result.core;
+    });
   }
 
   attached() {
@@ -45,8 +26,8 @@ export class EuropeMap {
       this.countries.map(c => [
         {v: c.name, f: ''},
         '<div style="white-space:nowrap;">' +
-        '<img src="resources/images/flags/' + c.img + '.png" ' +
-        'style="margin-left:3px;margin-right:8px;border:solid 1px #ddd;display:inline-block;vertical-align:middle;"/>' +
+        '<img src="resources/images/flags/' + c.code + '.png" ' +
+        'style="margin-left:3px;margin-right:8px;display:inline-block;vertical-align:middle;"/>' +
         '<span style="font-family:robotoBold;display:inline-block;vertical-align:middle;">' +
         'IAESTE ' + c.name + '</span></div>'
       ])

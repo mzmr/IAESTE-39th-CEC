@@ -1,0 +1,10 @@
+<template>
+  <p>
+    <span class="text-capitalize">${countrytype} </span>countries:
+    <ul class="cec-style-list">
+      <li repeat.for="c of countries" if.bind="isReady" style.one-way="$parent.getFlag(c)" country>
+        <a href="${c.www}">${c.name}</a>
+      </li>
+    </ul>
+  </p>
+</template>

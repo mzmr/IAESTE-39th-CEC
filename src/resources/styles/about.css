@@ -1,0 +1,16 @@
+@media (max-width:991px) {
+  #map-column {
+    padding-right: 0;
+    padding-left: 0;
+  }  
+}
+
+ul.cec-style-list > li[country] {
+  text-indent:4.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+ul.cec-style-list > li[country] > a {
+  color: inherit;
+}

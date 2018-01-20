@@ -1,6 +1,8 @@
 <template>
   <require from="resources/elements/slogan"></require>
   <require from="resources/elements/europe-map"></require>
+  <require from="resources/elements/country-list"></require>
+  <require from="resources/styles/about.css"></require>
   
   <slogan title.bind="title" building.bind="building" containerless></slogan>
 
@@ -19,29 +21,8 @@
           <div class="col-md-6">
             <h1>CER</h1>
             <p>IAESTE CER was established in 2012. The aim was to integrate all of the committees in Central Europe. IAESTE Central European Region aims for exchanging informations, ideas, knowledge between students as well as motivating and showing new solutions.</p>
-            <p>
-              Core members
-              <ul class="cec-style-list">
-                <li>Austria</li>
-                <li>Bosnia and Herzegovina</li>
-                <li>Croatia</li>
-                <li>Czech Republic</li>
-                <li>Hungary</li>
-                <li>Poland</li>
-                <li>Slovakia</li>
-                <li>Slovenia</li>
-              </ul>
-            </p>
-            <p>
-              Edge members
-              <ul class="cec-style-list">
-                <li>LC Munich, Germany</li>
-                <li>LC Dresden, Germany</li>
-                <li>Macedonia</li>
-                <li>Turkey</li>
-              </ul>
-            </p>
-
+            <country-list countrytype.bind="'core'" containerless></country-list>
+            <country-list countrytype.bind="'edge'" containerless></country-list>
           </div>
           <div id="map-column" class="col-md-6">
             <europe-map containerless></europe-map>
