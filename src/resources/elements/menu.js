@@ -17,8 +17,14 @@ export class Menu {
     });
 
     $(document).ready(function() {
-      $('.navbar-nav li.trigger-collapse a').click(function(event) {
+      $('.navbar-nav li a').click(function(event) {
         $('.navbar-collapse').collapse('hide');
+      });
+    });
+
+    $(document).ready(function() {
+      $('.navbar .navbar-header button').click(function(event) {
+        $('.navbar-collapse').collapse('toggle');
       });
     });
   }

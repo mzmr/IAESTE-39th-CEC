@@ -6,11 +6,87 @@
 }
 
 ul.cec-style-list > li[country] {
-  text-indent:4.5em;
+  text-indent:3.3em;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 }
 
 ul.cec-style-list > li[country] > a {
   color: inherit;
+}
+
+#anthem-media-line {
+  margin-top:20px;
+}
+
+#anthem-media-line > div {
+  border: 1px solid #ddd;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+#anthem-media-line > button {
+  margin-left: 20px;
+  vertical-align: middle;
+  background:none;
+  border: 1px rgb(203,33,42) solid;
+  font-family: robotoBold;
+  color: rgb(203,33,42);
+  padding:10px;
+}
+
+#anthem-lyrics {
+  padding-top:25px;
+}
+
+#anthem-lyrics > p {
+  width: fit-content;
+}
+
+#anthem-lyrics .chorus {
+  margin-left: 20px;
+}
+
+#anthem-lyrics .anthem-title {
+  font-family: robotoBold;
+  margin-bottom:15px;
+}
+
+.iaeste-stats-container {
+  margin-bottom: 30px;
+}
+
+.iaeste-stats-container i.fa {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  display: table;
+  color:#cb212a;
+}
+
+.iaeste-stats-container i.fa-users {
+  color: #cb212a;
+}
+
+.iaeste-stats-container i.fa-handshake-o {
+  color: #9c1c2a;
+}
+
+.iaeste-stats-container i.fa-graduation-cap {
+  color: #5c132b;
+}
+
+.iaeste-stats-container i.fa-globe {
+  color: #2d0e2b;
+}
+
+.iaeste-stats {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.iaeste-stats > span {
+  font-family: robotoBold;
+  font-size: 22px;
 }

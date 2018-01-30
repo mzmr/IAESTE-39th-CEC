@@ -6,7 +6,7 @@ export class EuropeMap {
 
   constructor(dataSource) {
     dataSource.getData('page_content/countries.json').then(result => {
-      this.countries = result.core;
+      window.countryList = result.core;
     });
   }
 
@@ -23,13 +23,13 @@ export class EuropeMap {
     data.addColumn('string', 'Country');
     data.addColumn({type: 'string', role: 'tooltip', p: {html: true}});
     data.addRows(
-      this.countries.map(c => [
+      window.countryList.map(c => [
         {v: c.name, f: ''},
         '<div style="white-space:nowrap;">' +
         '<img src="resources/images/flags/' + c.code + '.png" ' +
         'style="margin-left:3px;margin-right:8px;display:inline-block;vertical-align:middle;"/>' +
         '<span style="font-family:robotoBold;display:inline-block;vertical-align:middle;">' +
-        'IAESTE ' + c.name + '</span></div>'
+        /*'IAESTE ' +*/ c.name + '</span></div>'
       ])
     );
 
