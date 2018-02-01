@@ -39,6 +39,10 @@ body {
   box-sizing: border-box;
 }
 
+strong {
+  font-family: robotoBold;
+}
+
 .page-content {
   width: 100%;
   padding-bottom: 20px;
@@ -54,9 +58,8 @@ ul.cec-style-list {
 
 ul.cec-style-list > li {
   list-style: none;
-  padding: 0.1em 0 0.1em 0;
-  background-position: 1em 50%;
-  text-indent:2em;
+  padding: 0.1em 0 0.1em 2em;
+  background-position: 1em 0.55em;
   list-style:none;
   background-repeat:no-repeat;
   background-image:url('resources/images/bullet.png');

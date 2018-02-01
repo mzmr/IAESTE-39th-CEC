@@ -1,0 +1,11 @@
+#time-paragraph {
+  text-align: center;
+}
+
+#time {
+  text-align: center;
+  font-family: robotoBold;
+  font-size: 30px;
+  margin-top:10px;
+  margin-bottom:25px;
+}
