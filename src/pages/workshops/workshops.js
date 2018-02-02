@@ -1,5 +1,6 @@
 import { inject } from 'aurelia-framework';
 import { DataSource } from '../../data/data-source';
+import { addBackgrounds } from 'utils';
 
 @inject(DataSource)
 export class Workshops {
@@ -9,6 +10,10 @@ export class Workshops {
 
   constructor(dataSource) {
     this.dataSource = dataSource;
+  }
+
+  attached() {
+    addBackgrounds();
   }
 
   created() {
