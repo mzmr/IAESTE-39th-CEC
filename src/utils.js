@@ -10,24 +10,53 @@ export function addBackgrounds() {
     let imageHeight = 399;
     let minWidth = Math.round(0.1 * imageWidth);
     let widthDiff = imageWidth - minWidth;
+    let circleNumber = 3;
 
     $('.page-content > .content-container').each(function(i) {
       let w = $(this).innerWidth();
       let h = $(this).innerHeight();
 
-      let tmpList = Array.from(Array(3).keys());
-      let backgroundImages = tmpList.map(function(e) {
-        let xPos = Math.round(Math.random() * (w + imageWidth / 2) - imageWidth / 2);
-        let yPos = Math.round(Math.random() * (h + imageHeight / 2) - imageHeight / 2);
-        return imgPath + ' ' + xPos + 'px ' + yPos + 'px no-repeat';
-      }).join(', ') + ', white';
+      let positions = createPositions(circleNumber, imageWidth, imageHeight, w, h);
+      let backgroundImage = positions.map(pos =>
+        imgPath + ' ' + pos.x + 'px ' + pos.y + 'px no-repeat'
+      ).join(', ') + ', white';
 
-      let backgroundSizes = tmpList.map(e =>
-          Math.round(minWidth + Math.random() * widthDiff) + 'px'
-        ).join(', ');
+      let backgroundSize = positions.map(e =>
+        Math.round(minWidth + Math.random() * widthDiff) + 'px'
+      ).join(', ');
 
-      $(this).css('background', backgroundImages);
-      $(this).css('background-size', backgroundSizes);
+      $(this).css('background', backgroundImage);
+      $(this).css('background-size', backgroundSize);
     });
   });
+}
+
+function createPositions(i, imgW, imgH, areaW, areaH) {
+  let positions = [];
+  let x = 0;
+
+  for (let c = 0; c < i; c++) {
+    let pos;
+
+    do {
+      pos = { x: randCoord(areaW, imgW), y: randCoord(areaH, imgH) };
+      ++x;
+    }
+    while (c > 0 && x < 10 && !isDistancePreserved(pos, positions, Math.max(imgW, imgH)));
+    positions.push(pos);
+  }
+
+  return positions;
+}
+
+function randCoord(areaSize, imgSize) {
+  return Math.round(Math.random() * areaSize - imgSize / 2);
+}
+
+function isDistancePreserved(pos, positions, minDistance) {
+  return positions.every(function(p) { return distance(p, pos) > minDistance; });
+}
+
+function distance(posA, posB) {
+  return Math.sqrt(Math.pow(posA.x - posB.x, 2), Math.pow(posA.y - posB.y, 2));
 }

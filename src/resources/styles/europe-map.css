@@ -1,6 +1,13 @@
-.europe-map-container {
-  overflow: hidden;
-  width: 100%;
+@media (min-width:992px) {
+  .europe-map-container {
+    height: 748px;
+  }
+}
+
+@media (max-width:991px) {
+  .europe-map-container {
+    height: 550px;
+  }
 }
 
 /*initial size: width:1140px; height: 711px*/
@@ -11,25 +18,12 @@
 }
 
 @media (min-width:992px) {
-  .europe-map-container {
-    margin: -50px 0px -60px 0px;
-    height: 748px;
-  }
-
   .europe-map-container > #europe-map {
     top: -420px;
   }
 }
 
 @media (max-width:991px) {
-  .europe-map-container {
-    margin: 40px 0px -60px 0px;
-    position: relative;
-    left:50%;
-    transform: translateX(-50%);
-    height: 550px;
-  }
-
   .europe-map-container > #europe-map {
     top: -510px;
   }

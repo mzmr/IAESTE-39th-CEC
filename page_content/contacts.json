@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Gaba",
+    "surname" : "Goździewicz",
+    "email": "gabriela.gozdziewicz@iaeste.pl",
+    "phone": "+48 510 904 206",
+    "img": "resources/images/contacts/gabriela_gozdziewicz.jpg"
+  }, {
+    "name": "James",
+    "surname" : "Bond",
+    "email": "james@bond.pl",
+    "phone": "+48 007 007 007",
+    "img": "resources/images/contacts/james_bond.jpg"
+  }
+]
