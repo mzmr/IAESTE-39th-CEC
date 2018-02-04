@@ -42,11 +42,6 @@
           "node_modules/requirejs/require.js"
         ],
         "dependencies": [
-          {
-            "name": "aurelia-google-maps",
-            "path": "../node_modules/aurelia-google-maps/dist/amd",
-            "main": "index"
-          },
           "jquery",
           {
             "name": "bootstrap",

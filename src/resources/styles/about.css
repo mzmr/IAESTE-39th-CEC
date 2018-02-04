@@ -75,6 +75,7 @@ ul.cec-style-list > li[country] > a {
 }
 
 .iaeste-stats {
+  text-align: center;
   margin-top: 15px;
   font-size: 18px;
 }

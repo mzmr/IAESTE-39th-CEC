@@ -1,6 +1,6 @@
 <template>
   <require from="resources/elements/slogan"></require>
-  <require from="resources/elements/g-map"></require>
+  <require from="resources/elements/cec-location-map"></require>
   <require from="resources/styles/accommodation.css"></require>
 
   <slogan title.bind="title" building.bind="building" containerless></slogan>
@@ -23,13 +23,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="content-container">
-      <div class="container">
-        <h1>The map!</h1>
-      </div>
-      <g-map></g-map>
     </div>
 
     <div class="content-container">
@@ -61,6 +54,13 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="content-container">
+      <div class="container">
+        <h1>Where to go from the bus station?</h1>
+      </div>
+      <cec-location-map></cec-location-map>
     </div>
 
   </section>
