@@ -93,10 +93,3 @@
   -webkit-transition: .3s all;
   transition: .3s all;
 }
-
-/*******/
-#mapp, #mapp2 {
-  display: relative;
-  width:700px;
-  height:500px;
-}
