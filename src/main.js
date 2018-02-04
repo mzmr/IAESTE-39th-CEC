@@ -1,4 +1,5 @@
 import environment from './environment';
+import { GoogleMapsApi } from 'GoogleMapsApi';
 
 export function configure(aurelia) {
   aurelia.use
@@ -15,6 +16,8 @@ export function configure(aurelia) {
         region: '' | 'GB' // default: it applies a default bias for application behavior towards the United States. (https://developers.google.com/maps/documentation/javascript/localization)
       });
     });
+
+  window.gmap = new GoogleMapsApi();
 
   if (environment.debug) {
     aurelia.use.developmentLogging();

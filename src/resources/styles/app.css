@@ -41,6 +41,7 @@ body {
 
 strong {
   font-family: robotoBold;
+  font-weight: normal;
 }
 
 .page-content {

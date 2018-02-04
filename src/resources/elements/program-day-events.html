@@ -4,7 +4,7 @@
       <tbody>
         <tr repeat.for="event of day.events" class="${$parent.isItNow(event) ? 'active' : ''}">
           <td>${$parent.startHour(event)} - ${$parent.endHour(event)}</td>
-          <td>${event.title}</td>
+          <td><strong>${event.title}</strong></td>
         </tr>
       </tbody>
     </table>
