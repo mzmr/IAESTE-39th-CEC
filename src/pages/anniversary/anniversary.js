@@ -1,7 +1,7 @@
 import { addBackgrounds } from 'utils';
 
 export class Anniversary {
-  title = '70th Anniversary';
+  title = '';
 
   attached() {
     addBackgrounds();

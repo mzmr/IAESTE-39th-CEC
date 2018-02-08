@@ -84,11 +84,3 @@ ul.cec-style-list > li[country] > a {
   font-family: robotoBold;
   font-size: 22px;
 }
-
-#infographic {
-  width: 100%;
-  margin-top: 10px;
-  -webkit-box-shadow: 0px 0px 40px 10px rgba(255,255,255,1);
-  -moz-box-shadow: 0px 0px 40px 10px rgba(255,255,255,1);
-  box-shadow: 0px 0px 40px 10px rgba(255,255,255,1);
-}

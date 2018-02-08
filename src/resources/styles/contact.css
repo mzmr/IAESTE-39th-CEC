@@ -1,5 +1,9 @@
-.face-photo {
+.contact-content {
   margin-top:40px;
+}
+
+.face-photo {
+  vertical-align: middle;
   border-radius: 50%;
   width: 240px;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
@@ -9,4 +13,52 @@
 
 #general-mail {
   font-size: 20px;
+}
+
+.personal-info {
+  width:fit-content;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+@media (min-width:768px) {
+  .personal-info {
+    display: inline-block;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width:767px) {
+  .face-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .personal-info {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+.personal-info .fa {
+  margin-right:14px;
+}
+
+.personal-info .fa-user {
+  color: #cb212a;
+}
+
+.personal-info .fa-briefcase {
+  color: #ab1d2a;
+}
+
+.personal-info .fa-envelope {
+  color: #7c172b;
+}
+
+.personal-info .fa-phone {
+  color: #4d122b;
 }

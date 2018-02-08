@@ -10,12 +10,13 @@
 				<h1>Here we are</h1>
 				<p>We're here for you so don't hesitate to ask us any questions. You can write us using one of the emails listed below or just take the general one: <a id="general-mail" href="mailto:cec@iaeste.pl">cec@iaeste.pl</a></p>
 				<div class="row">
-					<div repeat.for="c of contacts" class="col-md-6">
-						<div class="content text-center">
-							<img class="face-photo" src.bind="c.img">
-							<h3>${c.name} ${c.surname}</h3>
-							<h4><a href="mailto:${c.email}">${c.email}</a></h4>
-							<h4><a href="tel:${c.phone}">${c.phone}</a></h4>
+					<div class="contact-content" repeat.for="c of contacts" class="col-md-12">
+						<img class="face-photo" src.bind="c.img">
+						<div class="personal-info">
+							<h3><i class="fa fa-user"></i>${c.name} ${c.surname}</h3>
+							<h4><i class="fa fa-briefcase"></i>${c.role}</h4>
+							<h4><i class="fa fa-envelope"></i><a href="mailto:${c.email}">${c.email}</a></h4>
+							<h4><i class="fa fa-phone"></i><a href="tel:${c.phone}">${c.phone}</a></h4>
 						</div>
 					</div>
 				</div>

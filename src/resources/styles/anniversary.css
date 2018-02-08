@@ -14,14 +14,57 @@
   position: absolute;
 }
 
-@media (min-width:768px) {
+.anniversary-top .iaeste-logo-70 {
+  position:absolute;
+  width:100%;
+  top:0;
+}
+
+.anniversary-top .iaeste-logo-70 > div {
+  height:100%;
+  display: flex;
+}
+
+.anniversary-top .iaeste-logo-70 img {
+  width:550px;
+  margin: 135px auto auto auto;
+}
+
+@media (min-width:924px) {
   .anniversary-top fireworks {
     top: 0;
   }
+
+  .anniversary-top .iaeste-logo-70 {
+    height:320px;
+  }
 }
 
-@media (max-width:767px) {
+@media (max-width:923px) {
   .anniversary-top fireworks {
     top: -20px;
+  }
+
+  .anniversary-top .iaeste-logo-70 {
+    height:300px;
+  }
+}
+
+
+@media (min-width:591px) and (max-width:767px) {
+  .anniversary-top .iaeste-logo-70 img {
+    width:500px;
+  }
+}
+
+@media (min-width:450px) and (max-width:590px) {
+  .anniversary-top .iaeste-logo-70 img {
+    width:400px;
+  }
+}
+
+@media (max-width:449px) {
+  .anniversary-top .iaeste-logo-70 img {
+    width:300px;
   }
 }
