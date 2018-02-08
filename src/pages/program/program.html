@@ -12,7 +12,7 @@
           <ul class="program-day-list list-unstyled">
             <li repeat.for="day of days" if.bind="isReady" class="${day.id === $parent.selectedDay.id ? 'active' : ''}">
               <a click.delegate="$parent.select(day)">
-                ${day.date}
+                ${day.date}<br>
                 <strong class="text-capitalize">${$parent.getWeekDay(day)}</strong>
               </a>
             </li>

@@ -5,31 +5,65 @@
 .program-day-list li {
   display: inline-block;
   border: none;
-  
+  padding:1px;
   color: #fff;
   text-align: center;
-  margin: 10px;
   cursor: pointer;
   font-size: 24px;
-  background: #ff5c52;
   -moz-transition: .2s all;
   -o-transition: .2s all;
   -webkit-transition: .2s all;
   transition: .2s all;
 }
 
-.program-day-list li.active,
-.program-day-list li:hover {
+.program-day-list a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: inherit;
+  background: #ff5c52;
+  padding:20px;
+  width:100%;
+  height:100%;
+}
+
+.program-day-list li:hover a {
+  background: rgb(229,63,62);
+}
+
+.program-day-list li.active a {
   background: #cb212a;
 }
 
-.program-day-list a {
-  display: inline-block;
-  padding: 20px;
-  color: inherit;
-  text-decoration: inherit;
-  width: 160px;
+@media (min-width:992px) {
+  .program-day-list li {
+    width: 20%;
+  }
+
+  .program-day-list li.active {
+    width: 25%;
+  }
 }
+
+@media (min-width:768px) and (max-width:991px) {
+  .program-day-list li {
+    width: 25%;
+  }
+
+  .program-day-list li.active {
+    width: 33%;
+  }
+}
+
+@media (max-width:767px) {
+  .program-day-list li {
+    width: 80%;
+  }
+
+  .program-day-list li.active {
+    width: 100%;
+  }
+}
+
 
 .event-table {
   display: table;

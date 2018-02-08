@@ -2,9 +2,15 @@
   {
     "name": "Gaba",
     "surname" : "Goździewicz",
-    "email": "gabriela.gozdziewicz@iaeste.pl",
+    "email": "gabriela.gozdziewicz@iaeste.org",
     "phone": "+48 510 904 206",
     "img": "resources/images/contacts/gabriela_gozdziewicz.jpg"
+  }, {
+    "name": "Bartosz",
+    "surname" : "Dudziak",
+    "email": "bartosz.dudziak@iaeste.pl",
+    "phone": "-",
+    "img": "resources/images/contacts/male.png"
   }, {
     "name": "James",
     "surname" : "Bond",
