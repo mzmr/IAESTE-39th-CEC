@@ -7,9 +7,15 @@ export class About {
   attached() {
     addBackgrounds();
 
+    let btn = $('#anthem-button');
+    let show = 'Show lyrics translation';
+    let hide = 'Hide lyrics translation';
+    btn.text(show);
+
     $(document).ready(function() {
-      $('#anthem-media-line button').click(function(event) {
+      btn.click(function(event) {
         $('#anthem-lyrics').collapse('toggle');
+        btn.text(btn.text() === show ? hide : show);
       });
     });
   }
