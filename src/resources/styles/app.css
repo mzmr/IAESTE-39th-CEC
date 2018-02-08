@@ -19,12 +19,8 @@ html, body {
 }
 
 body {
-  /* background-color: #cb212a; */
-  /* background-image: url('images/slogan-pattern.png'); */
-  
   background: rgba(203,33,42,1);
   background: -moz-linear-gradient(top, rgba(203,33,42,1) 0%, rgba(45,14,43,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(203,33,42,1)), color-stop(100%, rgba(45,14,43,1)));
   background: -webkit-linear-gradient(top, rgba(203,33,42,1) 0%, rgba(45,14,43,1) 100%);
   background: -o-linear-gradient(top, rgba(203,33,42,1) 0%, rgba(45,14,43,1) 100%);
   background: -ms-linear-gradient(top, rgba(203,33,42,1) 0%, rgba(45,14,43,1) 100%);
@@ -95,10 +91,6 @@ ul.cec-style-list > li {
 
 @media (min-width:768px) {
   .content-container {
-    /* border-radius: 10px; */
-    width: 100% - 40px;
-    /* margin-left: 20px;
-    margin-right: 20px; */
     padding-top: 50px;
     padding-bottom: 60px;
   }
@@ -106,7 +98,6 @@ ul.cec-style-list > li {
 
 @media (max-width:767px) {
   .content-container {
-    /* border-radius: 70px; */
     width: 100%;
     margin-left: 0;
     margin-right: 0;

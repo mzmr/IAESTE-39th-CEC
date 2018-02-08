@@ -61,9 +61,19 @@
 .slogan-container {
   padding-bottom:0;
   margin-bottom:0;
-  /* background-color: #cb212a;
-  background-image: url('images/slogan-pattern.png'); */
   width: 100%;
+  overflow: hidden;
+}
+
+.slogan-container img {
+  margin-top:50px;
+  height:100%;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 30px;
+  opacity:0.6;
+  z-index:-5;
 }
 
 @media (min-width:591px) and (max-width:767px) {
@@ -85,7 +95,6 @@
 }
 
 .slogan-container .background-slogan-container {
-  /* height: 100%; */
   width: 100%;
   overflow: hidden;
   position: absolute;
@@ -98,9 +107,8 @@
   color: white;
   display: inline-block;
   white-space: nowrap;
-  left: 0; /*50%;*/
+  left: 0;
   position:relative;
-  /* transform: translateX(-50%); */
   zoom: 1;
 	filter: alpha(opacity=8);
   opacity: 0.08;

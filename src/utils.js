@@ -18,15 +18,11 @@ export function addBackgrounds() {
 
       let positions = createPositions(circleNumber, imageWidth, imageHeight, w, h);
       let backgroundImage = positions.map(pos =>
-        imgPath + ' ' + pos.x + 'px ' + pos.y + 'px no-repeat'
+        imgPath + ' ' + pos.x + 'px ' + pos.y + 'px / '
+          + Math.round(minWidth + Math.random() * widthDiff) + 'px no-repeat'
       ).join(', ') + ', white';
 
-      let backgroundSize = positions.map(e =>
-        Math.round(minWidth + Math.random() * widthDiff) + 'px'
-      ).join(', ');
-
       $(this).css('background', backgroundImage);
-      $(this).css('background-size', backgroundSize);
     });
   });
 }
