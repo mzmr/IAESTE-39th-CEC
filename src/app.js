@@ -9,7 +9,7 @@ export class App {
   }
 
   configureRouter(config, router) {
-    config.title = 'CEC';
+    config.title = '39th CEC Poland';
     config.options.root = '/';
     config.map([
       {
