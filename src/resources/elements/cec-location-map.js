@@ -33,14 +33,14 @@ export class CecLocationMap {
       let hotelMarker = new google.maps.Marker({
         position: this.hotel,
         map: this.map,
-        icon: 'resources/images/pointer_hotel.png',
+        icon: 'resources/images/map/pointer_hotel.png',
         title: 'Podhalanin'
       });
 
       let stationMarker = new google.maps.Marker({
         position: this.busStation,
         map: this.map,
-        icon: 'resources/images/pointer_bus.png',
+        icon: 'resources/images/map/pointer_bus.png',
         title: 'Bus station'
       });
 

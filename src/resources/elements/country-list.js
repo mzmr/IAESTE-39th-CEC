@@ -25,7 +25,7 @@ export class CountryList {
   }
 
   getFlag(c) {
-    return 'background-image:url(resources/images/flags/' + c.code + '.png)';
+    return 'background-image:url("resources/images/flags/' + c.code + '.png")';
   }
 
 }

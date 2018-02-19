@@ -2,35 +2,35 @@
   "core": [
     { "name": "Austria",
       "www": "https://www.iaeste.at/en",
-      "code": "at"
+      "code": "Austria"
     }, {
       "name": "Bosnia and Herzegovina",
       "www": "http://www.iaeste.ba",
-      "code": "ba"
+      "code": "Bosnia and Herzegovina"
     }, {
       "name": "Croatia",
       "www": "http://www.iaeste.hr",
-      "code": "hr"
+      "code": "Croatia"
     }, {
       "name": "Czech Republic",
       "www": "https://www.iaeste.cz",
-      "code": "cz"
+      "code": "Czech Republic"
     }, {
       "name": "Hungary",
       "www": "http://iaeste.hu",
-      "code": "hu"
+      "code": "Hungary"
     }, {
       "name": "Poland",
       "www": "https://www.iaeste.pl",
-      "code": "pl"
+      "code": "Poland"
     }, {
       "name": "Slovakia",
       "www": "https://iaeste.sk",
-      "code": "sk"
+      "code": "Slovakia"
     }, {
       "name": "Slovenia",
       "www": "http://iaeste.si",
-      "code": "si"
+      "code": "Slovenia"
     }
   ],
    
@@ -38,19 +38,19 @@
     {
       "name": "LC Munich, Germany",
       "www": "https://iaeste-muenchen.de",
-      "code": "de"
+      "code": "Munich"
     }, {
       "name": "LC Dresden, Germany",
       "www": "https://iaeste.tu-dresden.de/joomla/index.php/de/",
-      "code": "de"
+      "code": "Dresden"
     }, {
       "name": "Macedonia",
       "www": "http://iaeste.org.mk",
-      "code": "mk"
+      "code": "Macedonia"
     }, {
       "name": "Turkey",
       "www": "http://www.iaeste.org.tr",
-      "code": "tr"
+      "code": "Turkey"
     }
   ]
 }

@@ -59,7 +59,7 @@ ul.cec-style-list > li {
   background-position: 1em 0.55em;
   list-style:none;
   background-repeat:no-repeat;
-  background-image:url('resources/images/bullet.png');
+  background-image:url('resources/images/decoration/bullet.png');
 }
 
 .content-container {
@@ -81,7 +81,7 @@ ul.cec-style-list > li {
 
 .content-container .container h1::before {
   content:'';
-  background:url('resources/images/flower.png');
+  background:url('resources/images/decoration/flower.png');
   height: 37px;
   width: 28px;
   margin-left: -40px;

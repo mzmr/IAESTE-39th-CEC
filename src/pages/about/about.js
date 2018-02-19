@@ -2,7 +2,6 @@ import { addBackgrounds } from 'utils';
 
 export class About {
   title = 'About';
-  building = 'resources/images/buildings/sukiennice.png';
 
   attached() {
     addBackgrounds();

@@ -2,6 +2,10 @@
   padding-bottom: 0;
 }
 
+.page-bottom * {
+  color: white;
+}
+
 .page-bottom .sponsor-elem .logo {
   height: 150px;
   display: block;
@@ -9,33 +13,24 @@
   margin-right: auto;
 }
 
-.sponsor-container {
+.page-bottom .content-container {
   color: white;
   margin-bottom:0;
   background-color: #2d0e2b;
 }
 
-.sponsor-container .footer-header::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  background: white;
-  left: 0;
-  right: 0;
-}
-
-.sponsor-container .sponsor-data,
-.sponsor-container .sponsor-name,
-.sponsor-container .sponsor-name:link,
-.sponsor-container .sponsor-name:visited,
-.sponsor-container .sponsor-name:hover,
-.sponsor-container .sponsor-name:active {
+.page-bottom .sponsor-data,
+.page-bottom .sponsor-name,
+.page-bottom .sponsor-name:link,
+.page-bottom .sponsor-name:visited,
+.page-bottom .sponsor-name:hover,
+.page-bottom .sponsor-name:active {
   color:white;
   text-decoration: none;
   font-size: 30px;
 }
 
-.sponsor-container .sponsor-elem {
+.page-bottom .sponsor-elem {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(0,0,0,0);
@@ -45,30 +40,48 @@
   transition: .2s all;
 }
 
-.sponsor-container .sponsor-elem:hover {
+.page-bottom .sponsor-elem:hover {
   background-color: rgba(0,0,0,0.2);
 }
 
-.sponsor-container .sponsor-name {
+.page-bottom .sponsor-name {
   margin-top: 20px;
 }
 
-.footer-container {
+.page-bottom .content-container:last-child {
   background-color: #1d091c;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.footer-container a {
-  color: white;
+.page-bottom .contact-row {
+  white-space: nowrap;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.page-bottom .contact-row * {
+  vertical-align: middle;
+}
+
+.page-bottom .contact-row .fa {
   font-size:40px;
-  padding:10px;
+  padding: 10px 20px 10px 25px;
+  width:90px;
+  text-align: center;
 }
 
-.footer-container a:hover {
-  text-decoration: none;
+.page-bottom .contact-row a {
+  font-size:28px;
 }
 
-.content-container .container h1.footer-header::before {
-  background:url('resources/images/flower_white.png');
+.page-bottom .contact-row a:hover,
+.page-bottom .contact-row a:focus {
+  color:white;
+  text-decoration: underline;
+  outline: none;
+}
+
+.page-bottom .content-container h1::before {
+  background:url('resources/images/decoration/flower_white.png');
 }

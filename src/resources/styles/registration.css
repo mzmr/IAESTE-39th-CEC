@@ -3,3 +3,42 @@
   margin-top:10px;
   margin-bottom:25px;
 }
+
+.reservation-table {
+  display: table;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reservation-table tbody th {
+  font-weight: normal;
+  font-family: robotoBold;
+}
+
+.reservation-table tbody > * > *:last-child {
+  text-align: center;
+}
+
+.reservation-table tbody > * > * {
+  text-align: left;
+  padding: 20px 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.reservation-table tbody td {
+  border-top: 1px solid #ededed;
+}
+
+.reservation-table tbody tr:last-child td {
+  border-top:none;
+}
+
+.reservation-table tbody .active td {
+  background-color: #fa7929;
+  color: white;
+}

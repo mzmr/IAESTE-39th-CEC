@@ -10,10 +10,16 @@ export class App {
 
   configureRouter(config, router) {
     config.title = '39th CEC Poland';
+    // config.options.pushState = true;
     config.options.root = '/';
     config.map([
       {
-        route: ['', 'about'], name: 'about',
+        route: ['', 'home'], name: 'home',
+        nav: true,
+        moduleId: './pages/home/home', title: 'Home'
+      },
+      {
+        route: 'about', name: 'about',
         nav: true,
         moduleId: './pages/about/about', title: 'About'
       },
@@ -36,11 +42,6 @@ export class App {
         route: 'registration', name: 'registration',
         nav: true,
         moduleId: './pages/registration/registration', title: 'Registration'
-      },
-      {
-        route: 'contact', name: 'contact',
-        nav: true,
-        moduleId: './pages/contact/contact', title: 'Contact'
       },
       {
         route: 'anniversary', name: 'anniversary',

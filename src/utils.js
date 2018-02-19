@@ -5,7 +5,7 @@ export function random(min, max) {
 
 export function addBackgrounds() {
   $(document).ready(function() {
-    let imgPath = 'url(\'resources/images/logo-circle-transparent.png\')';
+    let imgPath = 'url("resources/images/decoration/logo-circle-transparent.png")';
     let imageWidth = 356;
     let imageHeight = 399;
     let minWidth = Math.round(0.1 * imageWidth);
