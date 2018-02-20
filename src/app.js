@@ -10,7 +10,7 @@ export class App {
 
   configureRouter(config, router) {
     config.title = '39th CEC Poland';
-    // config.options.pushState = true;
+    config.options.pushState = true;
     config.options.root = '/';
     config.map([
       {
