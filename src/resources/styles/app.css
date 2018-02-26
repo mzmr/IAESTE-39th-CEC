@@ -106,11 +106,6 @@ ul.cec-style-list > li {
   }
 }
 
-.registration-form {
-  width: 100%;
-  height: 1420px;
-}
-
 @media (max-width:991px) {
   .right-column {
     padding-right: 0;

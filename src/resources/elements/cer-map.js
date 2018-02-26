@@ -28,6 +28,11 @@ export class CerMap {
         name: 'Munich',
         lat: 48.155004,
         lon: 11.4717963
+      },
+      {
+        name: 'Jena',
+        lat: 50.9226456,
+        lon: 11.445892
       }
     ];
 

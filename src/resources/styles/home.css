@@ -62,3 +62,23 @@
 #home-background-holder {
   background: #000;
 }
+
+#iaeste-poland-home-logo {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:500px;
+  max-width: 100%;
+  padding: 35px;
+  -webkit-animation-name: sharpening;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+  animation-name: sharpening;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  -webkit-filter: opacity(0%) blur(50px) drop-shadow(0px 0px 25px rgba(255,255,255,0.5));
+  filter: opacity(0%) blur(50px) drop-shadow(0px 0px 25px rgba(255,255,255,0.5));
+}
