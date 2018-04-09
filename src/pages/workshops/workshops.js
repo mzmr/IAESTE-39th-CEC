@@ -7,6 +7,7 @@ export class Workshops {
   title = 'Workshops';
   workshops = [{}, {}];
   isReady = false;
+  selectedWS = null;
 
   constructor(dataSource) {
     this.dataSource = dataSource;
@@ -18,14 +19,37 @@ export class Workshops {
 
   created() {
     this.dataSource.getData('page_content/workshops.json').then(wsList => {
-      this.workshops[0] = { type: 'Half day', list: this.filterWorkshops('half', wsList) };
-      this.workshops[1] = { type: 'Full day', list: this.filterWorkshops('full', wsList) };
+      this.workshops[0] = { part: 'First part', list: this.setImagePaths(this.filterByPart('first', wsList)) };
+      this.workshops[1] = { part: 'Second part', list: this.setImagePaths(this.filterByPart('second', wsList)) };
+      this.workshops[2] = { part: 'Both parts', list: this.setImagePaths(this.filterByPart('both', wsList)) };
       this.isReady = true;
     });
   }
 
-  filterWorkshops(type, list) {
-    return list.filter(w => w.type === type);
+  filterByPart(part, list) {
+    return list.filter(w => w.part === part);
+  }
+
+  setImagePaths(wsList) {
+    return wsList.map(ws => {
+      ws.imagex = {
+        normal: 'resources/images/ws-presenters/' + ws.image + '/normal.jpg',
+        blurred: 'resources/images/ws-presenters/' + ws.image + '/blurred.jpg'
+      };
+      return ws;
+    });
+  }
+
+  select(ws) {
+    this.selectedWS = ws;
+    setTimeout(() => this.scrollToWS(ws.id), 400);
+    return true;
+  }
+
+  scrollToWS(id) {
+    $('html, body').animate({
+        scrollTop: $('#' + id).offset().top - 51
+    }, 200);
   }
 
 }

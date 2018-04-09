@@ -1,27 +1,7 @@
 [
   {
-    "name": "Sponsor 1",
-    "website": "http://www.jakasstrona1.com",
-    "logo": "resources/images/sponsor-logo/no-logo.png"
-  },
-  {
-    "name": "Sponsor 2",
-    "website": "https://www.jakasstrona2.com",
-    "logo": "resources/images/sponsor-logo/no-logo.png"
-  },
-  {
-    "name": "Sponsor 3",
-    "website": "https://www.jakasstrona3.com",
-    "logo": "resources/images/sponsor-logo/no-logo.png"
-  },
-  {
-    "name": "Sponsor 4",
-    "website": "https://www.jakasstrona4.com",
-    "logo": "resources/images/sponsor-logo/no-logo.png"
-  },
-  {
-    "name": "Sponsor 5",
-    "website": "https://www.jakasstrona5.com",
-    "logo": "resources/images/sponsor-logo/no-logo.png"
+    "name": "Tesco",
+    "website": "https://www.tesco.com/",
+    "logo": "resources/images/sponsor-logo/tesco.png"
   }
 ]
