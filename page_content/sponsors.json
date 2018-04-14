@@ -3,5 +3,10 @@
     "name": "Tesco",
     "website": "https://www.tesco.com/",
     "logo": "resources/images/sponsor-logo/tesco.png"
+  },
+  {
+    "name": "Nokia",
+    "website": "https://www.nokia.com/",
+    "logo": "resources/images/sponsor-logo/nokia.png"
   }
 ]

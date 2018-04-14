@@ -32,6 +32,10 @@
 }
 
 .page-bottom .sponsor-elem {
+  height:200px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(0,0,0,0);
@@ -86,4 +90,8 @@
 
 .page-bottom .content-container h1::before {
   background:url('resources/images/decoration/flower_white.png');
+}
+
+.page-bottom .fa {
+  color: #cb212a;
 }
