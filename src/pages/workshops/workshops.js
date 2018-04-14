@@ -19,9 +19,9 @@ export class Workshops {
 
   created() {
     this.dataSource.getData('page_content/workshops.json').then(wsList => {
-      this.workshops[0] = { part: 'First part', list: this.setImagePaths(this.filterByPart('first', wsList)) };
-      this.workshops[1] = { part: 'Second part', list: this.setImagePaths(this.filterByPart('second', wsList)) };
-      this.workshops[2] = { part: 'Both parts', list: this.setImagePaths(this.filterByPart('both', wsList)) };
+      this.workshops[0] = { part: 'Morning', list: this.setImagePaths(this.filterByPart('first', wsList)) };
+      this.workshops[1] = { part: 'Afternoon', list: this.setImagePaths(this.filterByPart('second', wsList)) };
+      this.workshops[2] = { part: 'All day', list: this.setImagePaths(this.filterByPart('both', wsList)) };
       this.isReady = true;
     });
   }
@@ -48,8 +48,8 @@ export class Workshops {
 
   scrollToWS(id) {
     $('html, body').animate({
-        scrollTop: $('#' + id).offset().top - 51
-    }, 200);
+        scrollTop: $('#' + id).offset().top - 65
+    }, 400);
   }
 
 }

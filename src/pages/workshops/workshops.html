@@ -20,7 +20,10 @@
 			<div class="ws-box-container container">
 				<div class="ws-box content-container ${workshop.id === selectedWS.id ? 'active' : ''}"
 					id="${workshop.id}" repeat.for="workshop of wsGroup.list"
-					css="background-image: url(${workshop.id === selectedWS.id ? workshop.imagex.blurred : workshop.imagex.normal})"
+					css="background-image: ${workshop.id === selectedWS.id ?
+						'url(' + workshop.imagex.blurred + ')'
+						:
+						'url(' + workshop.imagex.normal + '), url(' + workshop.imagex.blurred + ')' }"
 					click.delegate="select(workshop)">
 					<h2 class="ws-title-bottom">${workshop.title}</h2>
 					<h4 class="ws-presenter-bottom">${workshop.presenter}</h4>

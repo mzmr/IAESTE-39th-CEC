@@ -224,5 +224,27 @@
       "Stress is not a black or white thing. We all experience stress in various situations. But what is the main source of anxiety in people's lives? What are the positive and negative effects of stress and how can you learn to control it and ultimately use it to your advantage. The workshop will consist of a small theoretical part. During workshop we will have a theoretical part focusing on behaviours and identifying symptoms of stress. Afterwards we will practice stress reducing techniques and how to apply them in everyday situations.",
       "So bring some comfortable clothes and learn how to make stress your best friend."
     ]
+  },
+  {
+    "id": 20,
+    "part": "both",
+    "title": "Design Thinking",
+    "presenter": "M-Powered Projects",
+    "image": "m_powered_projects",
+    "description": [
+      "Design Thinking is an innovative, dynamic and human centered approach to learning, cooperating and problem solving. During the workshop you will get to know and experience design thinking as a structured framework for identifying challenges, developing potential solutions, refining and testing ideas. Design Thinking can be flexibly implemented in an educational environment, serving equally well as a framework for course design or structure for an activity or group project."
+    ]
+  },
+  {
+    "id": 21,
+    "part": "second",
+    "title": "Exchange WG",
+    "presenter": "Lenka Kadeřábková & Gábor Balatincz",
+    "image": "lenka_kaderabkova_gabor_balatincz",
+    "description": [
+      "Whole day workgroup session for national exchange coordinators (or experienced local exchange coordinators).",
+      "We will discuss the most puzzling questions about the exchange as: unused offers, problems during summer reception or efficiency of AC. For more details, we will send a questionnaire and ask you, what is problem in your country and what you want to discuss! Please note that only 2 people/country can participate.",
+      "And, do not worry, we will have a fun as well :)"
+    ]
   }
 ]

@@ -5,13 +5,14 @@
     padding:0;
 }
 
-.ws-box-container::before {
+.ws-box-container::before, .ws-box-container::after {
     content:none;
 }
 
 .ws-box-container .ws-box {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
@@ -42,7 +43,7 @@
 
 @media (min-width:992px) and (max-width:1199px) {
     .ws-box-container .ws-box {
-        width: 475px;
+        width: 474px;
         height: 380px;
     }
 }
