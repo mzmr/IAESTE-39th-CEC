@@ -31,3 +31,7 @@ node_modules
 
 # Compiled files
 scripts
+
+
+resources/images/ws-presenters/__full-size__/
+resources/images/ws-presenters/__originals__/
