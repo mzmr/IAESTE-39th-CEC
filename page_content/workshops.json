@@ -126,7 +126,7 @@
   },
   {
     "id": 12,
-    "part": "first",
+    "part": "second",
     "title": "PR WG",
     "presenter": "Alek Cvetanovski",
     "image": "alek_cvetanovski",
@@ -183,7 +183,7 @@
   },
   {
     "id": 17,
-    "part": "second",
+    "part": "first",
     "title": "Structure of IAESTE a.s.b.l",
     "presenter": "Hossein Eftekhar",
     "image": "hossein_eftekhar",
@@ -237,7 +237,7 @@
   },
   {
     "id": 21,
-    "part": "second",
+    "part": "both",
     "title": "Exchange WG",
     "presenter": "Lenka Kadeřábková & Gábor Balatincz",
     "image": "lenka_kaderabkova_gabor_balatincz",
