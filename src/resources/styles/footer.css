@@ -2,22 +2,14 @@
   padding-bottom: 0;
 }
 
-.page-bottom * {
+.page-bottom .content-container.media-container * {
   color: white;
 }
 
 .page-bottom .sponsor-elem .logo {
-  max-height: 150px;
+  max-height: 100%;
   max-width:80%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-bottom .content-container {
-  color: white;
-  margin-bottom:0;
-  background-color: #2d0e2b;
 }
 
 .page-bottom .sponsor-data,
@@ -29,24 +21,27 @@
   color:white;
   text-decoration: none;
   font-size: 30px;
+  width:100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding:40px 15px;
+  display: flex;
 }
 
 .page-bottom .sponsor-elem {
   height:200px;
-  display:flex;
-  align-items:center;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding:0;
   background-color: rgba(0,0,0,0);
   -moz-transition: .2s all;
   -o-transition: .2s all;
   -webkit-transition: .2s all;
   transition: .2s all;
+  outline-color: #cb212a33;
 }
 
 .page-bottom .sponsor-elem:hover {
-  background-color: rgba(0,0,0,0.2);
+  outline: 12px solid #cb212a33;
 }
 
 .page-bottom .sponsor-name {
@@ -54,7 +49,7 @@
   display:none;
 }
 
-.page-bottom .content-container:last-child {
+.page-bottom .content-container.media-container {
   background-color: #1d091c;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -88,10 +83,10 @@
   outline: none;
 }
 
-.page-bottom .content-container h1::before {
+.page-bottom .content-container.media-container h1::before {
   background:url('resources/images/decoration/flower_white.png');
 }
 
-.page-bottom .fa {
+.page-bottom .content-container.media-container .fa {
   color: #cb212a;
 }

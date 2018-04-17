@@ -8,5 +8,15 @@
     "name": "Nokia",
     "website": "https://www.nokia.com/",
     "logo": "resources/images/sponsor-logo/nokia.png"
+  },
+  {
+    "name": "Vianek",
+    "website": "https://vianek.pl/",
+    "logo": "resources/images/sponsor-logo/vianek.png"
+  },
+  {
+    "name": "Sylveco",
+    "website": "https://sylveco.pl/",
+    "logo": "resources/images/sponsor-logo/sylveco.png"
   }
 ]
