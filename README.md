@@ -1,7 +1,6 @@
-"# IAESTE-39th-CEC" 
+IAESTE 39th Central European Convention
+=======================================
 
-Additional dependencies:
-npm install bootstrap --save
-npm install jquery@^2.2.4 --save
-npm install aurelia-google-maps --save
-npm install font-awesome --save
+A page created for IAESTE organisation for 39th Central European Convention.
+
+Created in Aurelia framework.
